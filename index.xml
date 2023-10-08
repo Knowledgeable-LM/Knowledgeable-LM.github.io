@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Summit</title>
-    <link>https://Knowledgeable-LMs.github.io/</link>
-      <atom:link href="https://Knowledgeable-LMs.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Hugo Summit</description>
+    <title>Towards Knowledgeable Language Models @ ACL 2024</title>
+    <link>https://knowledgeable-lm.github.io/</link>
+      <atom:link href="https://knowledgeable-lm.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Towards Knowledgeable Language Models @ ACL 2024</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://Knowledgeable-LMs.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
-      <title>Hugo Summit</title>
-      <link>https://Knowledgeable-LMs.github.io/</link>
+      <url>https://knowledgeable-lm.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Towards Knowledgeable Language Models @ ACL 2024</title>
+      <link>https://knowledgeable-lm.github.io/</link>
     </image>
     
     <item>
       <title>Example Workshop</title>
-      <link>https://Knowledgeable-LMs.github.io/event/example/</link>
+      <link>https://knowledgeable-lm.github.io/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://Knowledgeable-LMs.github.io/event/example/</guid>
+      <guid>https://knowledgeable-lm.github.io/event/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
