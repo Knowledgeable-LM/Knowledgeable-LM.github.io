@@ -2,8 +2,8 @@
   "name": "Towards Knowledgeable Language Models @ ACL 2024",
   "short_name": "Towards Knowledgeable Language Models @ ACL 2024",
   "lang": "en-us",
-  "theme_color": "#0f0",
-  "background_color": "#0f0",
+  "theme_color": "#bbdefb",
+  "background_color": "#bbdefb",
   "icons": [{
     "src": "/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",

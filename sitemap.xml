@@ -4,6 +4,12 @@
   
   
   <url>
+    <loc>https://knowledgeable-lm.github.io/home_backup/workshops/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://knowledgeable-lm.github.io/home_backup/faq/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://knowledgeable-lm.github.io/home_backup/sponsors/</loc><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://knowledgeable-lm.github.io/event/example/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://knowledgeable-lm.github.io/event/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -13,6 +19,8 @@
     <loc></loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://knowledgeable-lm.github.io/categories/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://knowledgeable-lm.github.io/home_backup/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc></loc><changefreq>weekly</changefreq></url>
   <url>
