@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home_backups | Towards Knowledgeable Language Models @ ACL 2024</title>
+    <title>Home_backups | KnowledgeableLMs @ ACL 2024</title>
     <link>https://knowledgeable-lm.github.io/home_backup/</link>
       <atom:link href="https://knowledgeable-lm.github.io/home_backup/index.xml" rel="self" type="application/rss+xml" />
     <description>Home_backups</description>
