@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home_backups | KnowledgeableLMs @ ACL 2024</title>
-    <link>https://knowledgeable-lm.github.io/home_backup/</link>
-      <atom:link href="https://knowledgeable-lm.github.io/home_backup/index.xml" rel="self" type="application/rss+xml" />
+    <title>Home_backups | Language &#43; Molecules @ ACL 2024</title>
+    <link>https://language-plus-molecules.github.io/home_backup/</link>
+      <atom:link href="https://language-plus-molecules.github.io/home_backup/index.xml" rel="self" type="application/rss+xml" />
     <description>Home_backups</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://knowledgeable-lm.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://language-plus-molecules.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Home_backups</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/</link>
+      <link>https://language-plus-molecules.github.io/home_backup/</link>
     </image>
     
     <item>
       <title>Workshops</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/workshops/</link>
+      <link>https://language-plus-molecules.github.io/home_backup/workshops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://knowledgeable-lm.github.io/home_backup/workshops/</guid>
+      <guid>https://language-plus-molecules.github.io/home_backup/workshops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FAQ</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/faq/</link>
+      <link>https://language-plus-molecules.github.io/home_backup/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://knowledgeable-lm.github.io/home_backup/faq/</guid>
+      <guid>https://language-plus-molecules.github.io/home_backup/faq/</guid>
       <description>&lt;p style=&#34;padding-top: 5rem&#34;&gt;Check out frequently asked questions&amp;hellip;&lt;/p&gt;
 &lt;h2 id=&#34;when-will-i-recieve-my-ticket&#34;&gt;When will I recieve my ticket?&lt;/h2&gt;
 &lt;p&gt;You will receive your ticket to your e-mail immediately after successful payment.&lt;/p&gt;
@@ -37,9 +37,9 @@
     
     <item>
       <title>Sponsors</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/sponsors/</link>
+      <link>https://language-plus-molecules.github.io/home_backup/sponsors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://knowledgeable-lm.github.io/home_backup/sponsors/</guid>
+      <guid>https://language-plus-molecules.github.io/home_backup/sponsors/</guid>
       <description>&lt;p&gt;
 
 
@@ -62,7 +62,7 @@
                /media/sponsors/wowchemy_huf11fe95c4993533afbc1f179e48c828c_9212_3c9d5848fce4834a830284d0e1a0267f.webp 400w,
                /media/sponsors/wowchemy_huf11fe95c4993533afbc1f179e48c828c_9212_08694be2965b7cf1931a9359f25366c5.webp 760w,
                /media/sponsors/wowchemy_huf11fe95c4993533afbc1f179e48c828c_9212_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://knowledgeable-lm.github.io/media/sponsors/wowchemy_huf11fe95c4993533afbc1f179e48c828c_9212_3c9d5848fce4834a830284d0e1a0267f.webp&#34;
+               src=&#34;https://language-plus-molecules.github.io/media/sponsors/wowchemy_huf11fe95c4993533afbc1f179e48c828c_9212_3c9d5848fce4834a830284d0e1a0267f.webp&#34;
                width=&#34;150&#34;
                height=&#34;150&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -90,7 +90,7 @@
                /media/sponsors/hugo_hu5d3eef757b9becc01f5de3a2180043b6_11949_c2e03e04babb0921e4aff8d815fcb677.webp 400w,
                /media/sponsors/hugo_hu5d3eef757b9becc01f5de3a2180043b6_11949_1b5f9e6905d0a142540843f839b05b63.webp 760w,
                /media/sponsors/hugo_hu5d3eef757b9becc01f5de3a2180043b6_11949_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://knowledgeable-lm.github.io/media/sponsors/hugo_hu5d3eef757b9becc01f5de3a2180043b6_11949_c2e03e04babb0921e4aff8d815fcb677.webp&#34;
+               src=&#34;https://language-plus-molecules.github.io/media/sponsors/hugo_hu5d3eef757b9becc01f5de3a2180043b6_11949_c2e03e04babb0921e4aff8d815fcb677.webp&#34;
                width=&#34;320&#34;
                height=&#34;87&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
