@@ -108,6 +108,8 @@
       
         
       
+        
+      
     
     
     
@@ -1037,7 +1039,7 @@
 <li>(3) the updating and modification of knowledge;</li>
 <li>(4) probing and generation of knowledge.</li>
 </ul>
-<p>Stay tuned by following us on Twitter.</p>
+<!-- Stay tuned by following us on Twitter. -->
 
   </div>
 
@@ -1124,32 +1126,22 @@
 
   
   <div class="col-md-12">
-    <p>We welcome long (8 page) and short (4 page) paper submissions on all topics related to knowledgable LMs, including:</p>
-<ul>
-<li>Analysis of knowledge possessed by LMs: how much they know and where that knowledge is from.</li>
-<li>Enhancing LMs with existing knowledge sources (knowledge graphs, domain-specific databases, manuals and  rules etc, either during training or inference).</li>
-<li>Updating and editing knowledge in LMs.</li>
-<li>Knowledge extraction and generation using LMs</li>
-<li>Evaluation of knowledge utilization (faithfulness, truthfulness) by LMs.</li>
-</ul>
-<p>Currently, researchers that focus on different stages in this lifecycle are scattered across different sub-communities within NLP: probing knowledge and editing knowledge is often associated with the interpretability track while injecting knowledge is often application-specific and is discussed within the dialog, QA, IE, or summarization tracks. This workshop seeks to bring these researchers together and facilitate collaboration to create a more holistic view of the problem. For example, it is mysterious that LLMs on their own do not succeed in typical knowledge-intensive tasks such as IE, and this workshop aims to identify the gap and point out possible solutions. If we can quantify how much LMs know from pre-training (or if we can make LMs well-calibrated and truthful), then we may be able to inject knowledge in a more targeted and precise way.</p>
-<p>In this workshop, we want to bring together researchers that focus on different stages and different aspects (structured knowledge, unstructured knowledge, and knowledge acquired from LMs themselves) of this lifecycle to discuss the role of knowledge in the new era of large language models. Our workshop is also closely related to some of the core challenges involving LM research: reducing hallucination, improving interpretability, and making models extensible. Although such challenges are still open, it is clear that knowledge plays a key role: (1) attribution to sources or providing the relevant knowledge during generation can mitigate hallucination; (2) being able to ground LM&rsquo;s output or locate the knowledge provides insight into the LM&rsquo;s inner workings; (3) being able to efficiently adapt to domain knowledge or integrate updated facts improves extensibility.</p>
+    <p>Knowledge has been an important prerequisite for various NLP applications and is typically derived from either structured knowledge sources such as knowledge bases and dictionaries or unstructured knowledge sources such as Wikipedia documents and news articles.</p>
+<p>It is known that language models already possess a significant amount of knowledge through pre-training: LLMs can be used to generate commonsense knowledge and factual knowledge when prompted to do so.
+However, beyond the surface, there are still many lingering questions such as “where the knowledge comes from”, “how do we quantify the amount of knowledge”, “is the knowledge reliable (and do LMs themselves know)”, “how can we augment LMs with domain-specific knowledge”, “how can we revise knowledge without hurting the reasoning abilities of LMs” and “how can we leverage knowledge to assist the self-correction of LMs”.</p>
+<p>In this workshop, we want to bring together researchers who focus on different stages and different aspects (structured knowledge, unstructured knowledge, and knowledge acquired from LMs themselves) of the knowledge lifecycle to discuss the role of knowledge in the era of large language models.</p>
+<p><em><strong>Submission Topics</strong></em>
+We welcome long (8 page) and short (4 page) paper submissions on all topics related to knowledgable LMs, including:</p>
+<p>Analysis of knowledge within LMs: how much they know and where that knowledge is from.
+Enhancing LMs with existing knowledge sources (knowledge graphs, domain-specific databases, manuals, and rules, etc, either during training or inference).
+Analyzing and improving RAG (retrieval-augmented generation) systems
+Updating and editing knowledge in LMs.
+Knowledge extraction and generation using LMs
+Evaluation of knowledge utilization (faithfulness, truthfulness) by LMs.
+Identification and mitigation of LM hallucinations, factual error correction</p>
+<p>We will also announce a Best Paper Award at our workshop sponsored by Amazon.</p>
 <p><em><strong>Submission Instructions</strong></em></p>
-<p>We welcome two types of papers: regular workshop papers and non-archival submissions. Only regular workshop papers will be included in the workshop proceedings. All submissions should be in PDF format and made through <a href="">OpenReview submission portal</a>.</p>
-<ul>
-<li><strong>Regular workshop papers</strong>: <br />
-Authors are invited to submit papers of up to 8 pages for long papers or 4 pages for short papers, with unlimited pages for references. Authors may submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their code for reproducibility. In line with the ACL main conference policy, camera-ready versions of papers will be given one additional page of content. It should follow the ACL template style, which can be found <a href="https://github.com/acl-org/acl-style-files" target="_blank" rel="noopener">here</a>. The research presented in these papers should be substantially original. Regardless of their length, all submissions will undergo a single-track review process.
-All submissions must be anonymous for double-blind review.
-No author information should be included in the papers, and self-references that identify the authors should be avoided or anonymized. Accepted papers will be included in the workshop proceedings.
-We expect each paper to be reviewed by at least three reviewers.
-To encourage higher quality submissions, we will offer Best Paper Award(s) based on nomination by the reviewers and extensive discussions among the chairs. Accepted papers will be presented as posters by default, and outstanding submissions will also be selected for oral or spotlight presentations.</li>
-</ul>
-<br />
-<ul>
-<li><strong>Non-archival submissions</strong>: <br />
-We also solicit cross-submissions, i.e., papers on relevant topics that have appeared in other venues (e.g., workshop or conference papers at NLP, ML, or cognitive science venues, among others). Accepted papers will be presented at the workshop, with an indication of original venue, but will not be included in the workshop proceedings. Cross-submissions are ideal for related work which would benefit from exposure to the NLReasoning audience. Interested authors should submit their papers in PDF format through the NLReasoning Softconf website, with a note on the original venue. They will be reviewed in a single-blind fashion. Papers in this category do not need to follow the ACL format, and the submission length is determined by the original venue. The paper selection will be solely determined by the organizing committee. In addition, we welcome papers on relevant topics that are under review or to be submitted to other venues (including the ACL 2023 main conference). These papers must follow the regular workshop paper format and will not be included in the workshop proceedings. Papers in this category will be reviewed by workshop reviewers.</li>
-</ul>
-<!-- According to the ACL workshop guidelines, we do not encourage the re-submission of already-published papers, but you are allowed to submit ArXiv pre-prints or those currently under submission. Moreover, a work that is presented at the NeurIPS main conference should not appear in a workshop. Please be sure to indicate conflicts of interest for all authors on your paper. -->
+<p>We welcome two types of papers: regular workshop papers and non-archival submissions. Only regular workshop papers will be included in the workshop proceedings. All submissions should be in PDF format following the ACL template and made through OpenReview submission portal (<a href="https://openreview.net/group?id=aclweb.org/ACL/2024/Workshop/KnowledgeLM" target="_blank" rel="noopener">https://openreview.net/group?id=aclweb.org/ACL/2024/Workshop/KnowledgeLM</a>)</p>
 
   </div>
   
@@ -1310,7 +1302,7 @@ We also solicit cross-submissions, i.e., papers on relevant topics that have app
         
       
         
-          <td data-table-dtype="text">17 August 2024</td>
+          <td data-table-dtype="text">16 August 2024</td>
         
       
     </tr>
@@ -1887,7 +1879,7 @@ We also solicit cross-submissions, i.e., papers on relevant topics that have app
     
     
       
-      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/zoeyli/avatar_hu5a22e17f5afb5ee2302b05825ed8e1ac_1188184_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/zoeyli/avatar_hua4a19f9cf29de9da8fccd1273c353cbb_10004_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="portrait-title">
@@ -2059,7 +2051,7 @@ We also solicit cross-submissions, i.e., papers on relevant topics that have app
     <div class="portrait-title">
       <h2><a href="https://blender.cs.illinois.edu/hengji.html">Heng Ji</a></h2>
       
-      <h3>University of Illinois Urbana-Champaign</h3>
+      <h3>University of Illinois Urbana-Champaign, Amazon Scholar</h3>
       <ul class="network-icon" aria-hidden="true">
   
 </ul>
@@ -2292,6 +2284,124 @@ We also solicit cross-submissions, i.e., papers on relevant topics that have app
     </div>
   </section>
 
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="support" class="home-section wg-peopleme  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Support</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/amazon/avatar_hu266c014db47152fe67716ea2cf1fbeae_1361939_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2>Amazon</h2>
+      
+      <h3>Amazon</h3>
+      
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
 
 
 
@@ -2340,7 +2450,7 @@ We also solicit cross-submissions, i.e., papers on relevant topics that have app
 
   
   <p class="powered-by copyright-license-text">
-    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
   </p>
   
 
