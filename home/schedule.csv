@@ -1,11 +1,11 @@
 Time,Program
-09:00-09:05,Opening remarks
+09:00-09:05,Opening Remarks
 09:05-09:40,Keynote Speech: Peter Clark
 09:40-10:15,Keynote Speech: Luke Zettlemoyer 
 10:15-10:50,Keynote Speech: Tatsu Hashimoto 
 10:50-11:05,Coffee Break
-11:05-12:20,Oral Presentation: AcKnowledge: Acquired Knowledge Representation by Small Language Model Without Pre-training 
-11:20-12:35,Oral Presentation: Unified Hallucination Detection for Multimodal Large Language Models 
+11:05-12:20,Oral Presentation: Modeling Uncertainty and Using Post-fusion as Fallback Improves Retrieval Augmented Generation with LLMs 
+11:20-12:35,Oral Presentation: AcKnowledge: Acquired Knowledge Representation by Small Language Model Without Pre-training 
 11:35-12:50,Oral Presentation: Is Table Retrieval a Solved Problem? Join-Aware Multi-Table Retrieval 
 11:50-12:05,Oral Presentation: Measuring the Inconsistency of Large Language Models in Preferential Ranking 
 12:05-12:20,"Oral Presentation: Merging Facts Crafting Fallacies: Evaluating the Contradictory Nature of Aggregated Factual Claims in Long-Form Generations"
@@ -13,6 +13,6 @@ Time,Program
 13:30-14:05,Keynote Speech: Isabelle Augenstein 
 14:05-14:40,Keynote Speech: Ed Hovy 
 14:40-15:15,Keynote Speech: Hannah Rashkin 
-15:15-15:50,Panel discussion
+15:15-15:50,Panel Discussion
 16:00-17:30,Poster Session
-17:30-17:35,Closing remarks
+17:30-17:35,Closing Remarks
