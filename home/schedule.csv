@@ -1,8 +1,8 @@
 Time,Program
 09:00-09:05,Opening Remarks
-09:05-09:40,Keynote Speech: Peter Clark 
-09:40-10:15,Keynote Speech: Luke Zettlemoyer 
-10:15-10:50,Keynote Speech: Tatsu Hashimoto 
+09:05-09:40,"Keynote Speech Peter Clark: What do our Machines Believe?<br>Do language models form anything like a "mental model" when reasoning? And do they have coherent "beliefs" about the world? Probing an LM, we find the LLM's world views are only partially coherent, and often contain blatent inconsistencies. Taking this further, I'll describe how we can extract "belief graphs" from LMs and repair the inconsistencies they uncover. More generally, I'll promote a two-layered architecture for future systems, consisting of the LM plus a symbolic representation of (parts of) the model's belief state, supporting systematic reasoning, interaction, addition of external knowledge, and more rational behavior by our future LM companions."
+09:40-10:15,Keynote Speech Luke Zettlemoyer: 
+10:15-10:50,Keynote Speech Tatsu Hashimoto 
 10:50-11:05,Coffee Break
 11:05-12:25,Oral Presentation: Modeling Uncertainty and Using Post-fusion as Fallback Improves Retrieval Augmented Generation with LLMs 
 ,Oral Presentation: AcKnowledge: Acquired Knowledge Representation by Small Language Model Without Pre-training 
@@ -12,8 +12,8 @@ Time,Program
 ,"Oral Presentation: Merging Facts, Crafting Fallacies: Evaluating the Contradictory Nature of Aggregated Factual Claims in Long-Form Generations"
 12:25-12:30,Best Paper and Outstanding Paper Announcement
 12:40-13:30,Lunch Break
-13:30-14:05,Keynote Speech: Isabelle Augenstein 
-14:05-14:40,Keynote Speech: Eduard Hovy 
-14:40-15:15,Keynote Speech: Hannah Rashkin 
+13:30-14:05,Keynote Speech Isabelle Augenstein:
+14:05-14:40,Keynote Speech Eduard Hovy 
+14:40-15:15,Keynote Speech Hannah Rashkin: Challenges in measuring attribution in NLG models
 15:15-15:50,Panel Discussion
 16:00-17:30,Poster Session
