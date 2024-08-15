@@ -1677,8 +1677,224 @@ Identification and mitigation of LM hallucinations, factual error correction</p>
   
     
     
-    <tr>  </tr>
+    <tr>  <th>Time</th>  <th>Program</th>  </tr>
   
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">09:00-09:05</td>
+        
+      
+        
+          <td data-table-dtype="text">Opening Remarks</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">09:05-09:40</td>
+        
+      
+        
+          <td data-table-dtype="text">Keynote Speech <b>Peter Clark: What do our Machines Believe?</b><br><i>Do language models form anything like a &lsquo;mental model&rsquo; when reasoning? And do they have coherent &lsquo;beliefs&rsquo; about the world? Probing an LM, we find the LLM&rsquo;s world views are only partially coherent, and often contain blatent inconsistencies. Taking this further, I&rsquo;ll describe how we can extract &lsquo;belief graphs&rsquo; from LMs and repair the inconsistencies they uncover. More generally, I&rsquo;ll promote a two-layered architecture for future systems, consisting of the LM plus a symbolic representation of (parts of) the model&rsquo;s belief state, supporting systematic reasoning, interaction, addition of external knowledge, and more rational behavior by our future LM companions.</i></td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">09:40-10:15</td>
+        
+      
+        
+          <td data-table-dtype="text">Keynote Speech <b>Luke Zettlemoyer: Chameleon: Universal Mixed-modal Modeling by Tokenizing Everything</b><br><i>Existing multimodal models typically have custom architectures that are designed for specific modalities (image-&gt;text, text-&gt;image, text only, etc). In this talk, I will present our recent work on Chameleon, a family of early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The key idea is to tokenize images into a discrete space, wherever they appear within multimodal documents, and then model the resulting sequences of mixed-modal tokens with a single unified transformer. This approach allows us to trivial lift all of the advanced modeling techniques originally developed for text-only models to the multimodal setting, including multi-task alignment and retrieval augmentation, as I will show. It also performs well overall, demonstrating broad and general capabilities, including state-of-the-art performance in image captioning tasks, outperforms Llama-2 in text-only tasks while being competitive with models such as Mixtral 8x7B and Gemini-Pro, and performs non-trivial image generation, all in a single model.</i></td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">10:15-10:50</td>
+        
+      
+        
+          <td data-table-dtype="text">Keynote Speech Tatsu Hashimoto</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">10:50-11:05</td>
+        
+      
+        
+          <td data-table-dtype="text">Coffee Break</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">11:05-12:25</td>
+        
+      
+        
+          <td data-table-dtype="text">Oral Presentation: Modeling Uncertainty and Using Post-fusion as Fallback Improves Retrieval Augmented Generation with LLMs</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text"></td>
+        
+      
+        
+          <td data-table-dtype="text">Oral Presentation: AcKnowledge: Acquired Knowledge Representation by Small Language Model Without Pre-training</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text"></td>
+        
+      
+        
+          <td data-table-dtype="text">Oral Presentation: Unified Hallucination Detection for Multimodal Large Language Models</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text"></td>
+        
+      
+        
+          <td data-table-dtype="text">Oral Presentation: Is Table Retrieval a Solved Problem? Join-Aware Multi-Table Retrieval</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text"></td>
+        
+      
+        
+          <td data-table-dtype="text">Oral Presentation: Measuring the Inconsistency of Large Language Models in Preferential Ranking</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text"></td>
+        
+      
+        
+          <td data-table-dtype="text">Oral Presentation: Merging Facts, Crafting Fallacies: Evaluating the Contradictory Nature of Aggregated Factual Claims in Long-Form Generations</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">12:25-12:30</td>
+        
+      
+        
+          <td data-table-dtype="text">Best Paper and Outstanding Paper Announcement</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">12:40-13:30</td>
+        
+      
+        
+          <td data-table-dtype="text">Lunch Break</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">13:30-14:05</td>
+        
+      
+        
+          <td data-table-dtype="text">Keynote Speech <b>Isabelle Augenstein: Revealing the Parametric Knowledge of Language Models</b><br><i>Language Models acquire parametric knowledge from their training process, embedding it within their weights. The increasing scalability of LMs, however, poses significant challenges for understanding a model&rsquo;s inner workings and further for updating or correcting this embedded knowledge without the significant cost of retraining. Moreover, when using these language models for knoweldge-intensive language understanding tasks, LMs have to integrate relevant context, mitigating their inherent weaknesses, such as incomplete or outdated knowledge. Nevertheless, studies indicate that LMs often ignore the provided context as it can be in conflict with the pre-existing LM&rsquo;s memory learned during pre-training. Conflicting knowledge can also already be present in the LM&rsquo;s parameters, termed intra-memory conflict. This underscores the importance of unveiling exactly what knowledge is stored and its association with specific model components, and how this knowledge is used for downstream tasks. In this talk, I will present our research on evaluating the knowledge present in LMs, through a unified knowledge attribution framework, as well as diagnostic tests that can reveal knowledge conflicts.&lt;\i&gt;</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">14:05-14:40</td>
+        
+      
+        
+          <td data-table-dtype="text">Keynote Speech Eduard Hovy</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">14:40-15:15</td>
+        
+      
+        
+          <td data-table-dtype="text">Keynote Speech <b>Hannah Rashkin: Challenges in measuring attribution in NLG models</b><br><i>Large language models frequently &lsquo;hallucinat&rsquo; information, making claims about the real world that are not supported by background knowledge. I will discuss our recent work, which explores metrics for attribution, a framework measuring how well information in LLM output is supported by external documents.  I will cover our efforts to measure attribution in knowledge-grounded tasks using both human annotators and automatic metrics.  Lastly, I will talk about ongoing challenges in measuring attribution and areas in which these metrics need further exploration.&lt;\i&gt;</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">15:15-15:50</td>
+        
+      
+        
+          <td data-table-dtype="text">Panel Discussion</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text">16:00-17:30</td>
+        
+      
+        
+          <td data-table-dtype="text">Poster Session</td>
+        
+      
+    </tr>
   
   
 </table>
