@@ -1,14 +1,23 @@
 Time,Program
 09:00-09:05,Opening Remarks
-09:05-09:40,Keynote Speech
-09:40-10:15,Keynote Speech
-10:15-10:50,Keynote Speech
-10:50-11:05,Coffee Break
-11:05-12:25,Oral Presentation
-12:25-12:30,Best Paper and Outstanding Paper Announcement
-12:30-13:30,Lunch Break
-13:30-14:05,Keynote Speech
-14:05-14:40,Keynote Speech
-14:40-15:15,Keynote Speech
-15:15-15:50,Panel Discussion
-16:00-17:30,Poster Session
+09:05-09:50,Keynote Speech
+09:50-10:35,Keynote Speech
+10:35-11:00,Coffee Break
+11:00-11:45,Keynote Speech
+11:45-12:00,Oral Presentation: Norm Growth and Stability Challenges in Localized Sequential Knowledge Editing
+12:00-12:15,Oral Presentation: IAO Prompting: Making Knowledge Flow Explicit in LLMs through Structured Reasoning Templates
+12:15-12:30,Oral Presentation: Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition
+12:30-12:35,Best Paper Announcement
+12:35-14:00,Lunch Break (Student Mentoring Session + Poster Session)
+14:00-14:45,Keynote Speech
+14:45-15:30,Keynote Speech
+15:30-16:00,Coffee Break
+16:00-16:45,Keynote Speech
+16:50-16:55,Ligntning Talk: Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models
+16:55-17:00,Ligntning Talk: Mechanistic Understanding of Language Models in Syntactic Code Completion
+17:00-17:05,Ligntning Talk: Atari-GPT: Benchmarking Multimodal Large Language Models as Low-Level Policies in Atari Games
+17:05-17:10,Ligntning Talk: Knowledge Graph-Enhanced LLM for Food Recommendation through Question Answering
+17:10-17:15,Ligntning Talk: CricRAG: Retrieval Augmented Vision-Language Models for Personalized Cricket Coaching
+17:15-17:20,Ligntning Talk: Semiparametric Token-Sequence Co-Supervision
+17:20-17:25,Ligntning Talk: Auto-Q : Automated Domain Questions Generation for Industrial Assets
+17:25-17:30,Closing Remarks
