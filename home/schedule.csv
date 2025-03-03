@@ -1,23 +1,23 @@
 Time,Program
 09:00-09:05,Opening Remarks
-09:05-09:50,Keynote Speech
-09:50-10:35,Keynote Speech
+09:05-09:50,Keynote Speech Edward Hovy: Declarative and Procedural Knowledge in LLMs
+09:50-10:35,Keynote Speech Wenpeng Yin 
 10:35-11:00,Coffee Break
-11:00-11:45,Keynote Speech
+11:00-11:45,Keynote Speech Eric Won 
 11:45-12:00,Oral Presentation: Norm Growth and Stability Challenges in Localized Sequential Knowledge Editing
 12:00-12:15,Oral Presentation: IAO Prompting: Making Knowledge Flow Explicit in LLMs through Structured Reasoning Templates
 12:15-12:30,Oral Presentation: Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition
 12:30-12:35,Best Paper Announcement
 12:35-14:00,Lunch Break (Student Mentoring Session + Poster Session)
-14:00-14:45,Keynote Speech
-14:45-15:30,Keynote Speech
+14:00-14:45,Keynote Speech Lianhui Qin 
+14:45-15:30,Keynote Speech Li "Harry" Zhang: Executable and Trustworthy Planning with Large Language Models
 15:30-16:00,Coffee Break
-16:00-16:45,Keynote Speech
-16:50-16:55,Ligntning Talk: Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models
-16:55-17:00,Ligntning Talk: Mechanistic Understanding of Language Models in Syntactic Code Completion
-17:00-17:05,Ligntning Talk: Atari-GPT: Benchmarking Multimodal Large Language Models as Low-Level Policies in Atari Games
-17:05-17:10,Ligntning Talk: Knowledge Graph-Enhanced LLM for Food Recommendation through Question Answering
-17:10-17:15,Ligntning Talk: CricRAG: Retrieval Augmented Vision-Language Models for Personalized Cricket Coaching
-17:15-17:20,Ligntning Talk: Semiparametric Token-Sequence Co-Supervision
-17:20-17:25,Ligntning Talk: Auto-Q : Automated Domain Questions Generation for Industrial Assets
+16:00-16:45,Keynote Speech Huajie Shao: Physics Knowledge-Guided Foundation Models for Dynamical Systems
+16:50-16:55,Ligntning Presentation: Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models
+16:55-17:00,Ligntning Presentation: Mechanistic Understanding of Language Models in Syntactic Code Completion
+17:00-17:05,Ligntning Presentation: Atari-GPT: Benchmarking Multimodal Large Language Models as Low-Level Policies in Atari Games
+17:05-17:10,Ligntning Presentation: Knowledge Graph-Enhanced LLM for Food Recommendation through Question Answering
+17:10-17:15,Ligntning Presentation: CricRAG: Retrieval Augmented Vision-Language Models for Personalized Cricket Coaching
+17:15-17:20,Ligntning Presentation: Semiparametric Token-Sequence Co-Supervision
+17:20-17:25,Ligntning Presentation: Auto-Q : Automated Domain Questions Generation for Industrial Assets
 17:25-17:30,Closing Remarks
