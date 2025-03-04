@@ -1,39 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home_backups on KnowFM @ AAAI 25</title>
-    <link>https://knowledgeable-lm.github.io/home_backup/</link>
-    <description>Recent content in Home_backups on KnowFM @ AAAI 25</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://knowledgeable-lm.github.io/home_backup/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Workshops</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/workshops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://knowledgeable-lm.github.io/home_backup/workshops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://knowledgeable-lm.github.io/home_backup/faq/</guid>
-      <description>Check out frequently asked questions&amp;hellip; {style=&amp;ldquo;padding-top: 5rem&amp;rdquo;}
-When will I recieve my ticket? You will receive your ticket to your e-mail immediately after successful payment.
-Do you provide travel and accommodation for speakers?</description>
-    </item>
-    
-    <item>
-      <title>Sponsors</title>
-      <link>https://knowledgeable-lm.github.io/home_backup/sponsors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://knowledgeable-lm.github.io/home_backup/sponsors/</guid>
-      <description> </description>
-    </item>
+    <title>Home_backups | KnowFM @ AAAI 25</title>
+    <link>http://localhost:1313/home_backup/</link>
+      <atom:link href="http://localhost:1313/home_backup/index.xml" rel="self" type="application/rss+xml" />
+    <description>Home_backups</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_7613a4a452ac7087.png</url>
+      <title>Home_backups</title>
+      <link>http://localhost:1313/home_backup/</link>
+    </image>
     
   </channel>
 </rss>

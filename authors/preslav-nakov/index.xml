@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Preslav Nakov on KnowFM @ AAAI 25</title>
+    <title>Preslav Nakov | KnowFM @ AAAI 25</title>
     <link>https://knowledgeable-lm.github.io/authors/preslav-nakov/</link>
-    <description>Recent content in Preslav Nakov on KnowFM @ AAAI 25</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://knowledgeable-lm.github.io/authors/preslav-nakov/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://knowledgeable-lm.github.io/authors/preslav-nakov/index.xml" rel="self" type="application/rss+xml" />
+    <description>Preslav Nakov</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://knowledgeable-lm.github.io/media/icon_hu_7613a4a452ac7087.png</url>
+      <title>Preslav Nakov</title>
+      <link>https://knowledgeable-lm.github.io/authors/preslav-nakov/</link>
+    </image>
+    
   </channel>
 </rss>
