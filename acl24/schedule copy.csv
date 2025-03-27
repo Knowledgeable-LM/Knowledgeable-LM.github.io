@@ -1,0 +1,18 @@
+Time, Program
+09:00-09:05, Opening remarks
+09:05-09:40,"<p>Keynote Speech <b>Peter Clark: What do our Machines Believe?</b> <br> <i>Do language models form anything like a "mental model" when reasoning? And do they have coherent "beliefs" about the world? Probing an LM, we find the LLM's world views are only partially coherent, and often contain blatent inconsistencies. Taking this further, I'll describe how we can extract "belief graphs" from LMs and repair the inconsistencies they uncover. More generally, I'll promote a two-layered architecture for future systems, consisting of the LM plus a symbolic representation of (parts of) the model's belief state, supporting systematic reasoning, interaction, addition of external knowledge, and more rational behavior by our future LM companions.</i> </p>"
+09:40-10:15,"<p>Keynote Speech <b>Luke Zettlemoyer</b> <br> <i> </i> </p>"
+10:15-10:50,"<p>Keynote Speech <b>Tatsu Hashimoto</b> <br> <i> </i> </p>"
+10:50-11:20, Coffee Break
+11:20-12:32,"<p>Oral Presentation <b></b> <br> <i> </i> </p>"
+11:32-12:44,"<p>Oral Presentation <b></b> <br> <i> </i> </p>"
+11:44-12:56,"<p>Oral Presentation <b></b> <br> <i> </i> </p>"
+11:56-12:08,"<p>Oral Presentation <b></b> <br> <i> </i> </p>"
+12:08-12:20,"<p>Oral Presentation <b></b> <br> <i> </i> </p>"
+12:30-13:30, Poster Session
+13:30-14:05,"<p>Keynote Speech <b>Isabelle Augenstein: Revealing the Parametric Knowledge of Language Models</b> <br> <i>Language Models acquire parametric knowledge from their training process, embedding it within their weights. The increasing scalability of LMs, however, poses significant challenges for understanding a model's inner workings and further for updating or correcting this embedded knowledge without the significant cost of retraining. Moreover, when using these language models for knoweldge-intensive language understanding tasks, LMs have to integrate relevant context, mitigating their inherent weaknesses, such as incomplete or outdated knowledge. Nevertheless, studies indicate that LMs often ignore the provided context as it can be in conflict with the pre-existing LM's memory learned during pre-training. Conflicting knowledge can also already be present in the LM's parameters, termed intra-memory conflict. This underscores the importance of unveiling exactly what knowledge is stored and its association with specific model components, and how this knowledge is used for downstream tasks. In this talk, I will present our research on evaluating the knowledge present in LMs, through a unified knowledge attribution framework, as well as diagnostic tests that can reveal knowledge conflicts.</i></p>"
+14:05-14:40,"<p>Keynote Speech <b>Ed Hovy</b> <br> <i> </i> </p>"
+14:40-15:15,"<p>Keynote Speech <b>Hannah Rashkin</b> <br> <i>Large language models frequently "hallucinate" information, making claims about the real world that are not supported by background knowledge. I will discuss our recent work, which explores metrics for attribution, a framework measuring how well information in LLM output is supported by external documents.  I will cover our efforts to measure attribution in knowledge-grounded tasks using both human annotators and automatic metrics.  Lastly, I will talk about ongoing challenges in measuring attribution and areas in which these metrics need further exploration.</i> </p>"
+15:15-15:50, Panel discussion
+16:00-17:30, Poster Session
+17:30-17:35, Closing remarks

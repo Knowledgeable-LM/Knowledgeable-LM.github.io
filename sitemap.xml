@@ -50,6 +50,8 @@
   <url>
     <loc>https://knowledgeable-lm.github.io/authors/amazon/</loc><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://knowledgeable-lm.github.io/keynote/</loc><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://knowledgeable-lm.github.io/authors/silin-gao/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://knowledgeable-lm.github.io/authors/mohit-bansal/</loc><changefreq>weekly</changefreq></url>
@@ -60,10 +62,14 @@
   <url>
     <loc>https://knowledgeable-lm.github.io/authors/jiawei-han/</loc><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://knowledgeable-lm.github.io/aaai25/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://knowledgeable-lm.github.io/acl24/</loc><changefreq>weekly</changefreq></url>
+  <url>
     <loc></loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://knowledgeable-lm.github.io/categories/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://knowledgeable-lm.github.io/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://knowledgeable-lm.github.io/tags/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://knowledgeable-lm.github.io/tags/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://knowledgeable-lm.github.io/</loc><changefreq>weekly</changefreq></url></urlset>

@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KnowFM @ AAAI 25</title>
+    <title>Towards Knowledgeable Foundation Models</title>
     <link>https://knowledgeable-lm.github.io/</link>
       <atom:link href="https://knowledgeable-lm.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>KnowFM @ AAAI 25</description>
+    <description>Towards Knowledgeable Foundation Models</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://knowledgeable-lm.github.io/media/icon_hu_7613a4a452ac7087.png</url>
-      <title>KnowFM @ AAAI 25</title>
+      <url>https://knowledgeable-lm.github.io/media/icon_hu127f241f63a982cda73a1c1b15888e16_9623_512x512_fill_lanczos_center_3.png</url>
+      <title>Towards Knowledgeable Foundation Models</title>
       <link>https://knowledgeable-lm.github.io/</link>
     </image>
+    
+    <item>
+      <title>Keynote Speech</title>
+      <link>https://knowledgeable-lm.github.io/keynote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://knowledgeable-lm.github.io/keynote/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Edward Hovy: Declarative and Procedural Knowledge in LLMs&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+Large Language Models LLMs combine (declarative) knowledge and (procedural) inference, and sometimes are able to apply inference to produce new knowledge as well. But their amazing capabilities mask unexpected gaps and inaccuracies. Pinpointing specific bits of knowledge and specific inference pathways (so-called “circuits”), and identifying gaps, injecting desired new knowledge, and guiding inference is a challenge for NLP.  This talk provides background and a few ideas to explore.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Li Harry Zhang: Executable and Trustworthy Planning with Large Language Models&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+While large language models (LLM) can provide decent instructions, they are far from able to come up an executable and trustworthy plan for a particular user or agent, grounding to their specific situation and needs. To address this, I advocate for the methodology of using LLM as a code generator to create a formal representation of the planning environment. In conjunction with tools in classical AI planning, a plan can be found deterministically and faithfully. In this talk, I will discuss two strands of efforts. The first tackles fully-observed planning domains, where the model is given complete information and must propose a complete plan that satisfies given constraints. The second tackles partially-observed planning domains, where the model makes partial observations about the environment, propose partial plans, and iteratively acquire knowledge to complete a task. In both settings, we show that state-of-the-art models like DeepSeek-R1 and gpt-4o are heavily challenged by even the simplest tasks like rearranging or looking for objects. When prompted to generate the planning domain definition language (PDDL) input into a solver, LLMs outperform generating the plans directly. Even so, both syntactic and semantic errors point to LLMs&amp;rsquo; weakened ability to generate formal representations, especially when the language or domain is underrepresented in their pre-training.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bio:&lt;/strong&gt; Li Harry Zhang is an assistant professor at Drexel University, focusing on Natural Language Processing (NLP) and artificial intelligence (AI). He obtained his PhD degree from the University of Pennsylvania advised by Prof. Chris Callison-Burch. Prior, he obtained his Bachelor&amp;rsquo;s degree at the University of Michigan mentored by Prof. Rada Mihalcea and Prof. Dragomir Radev. His current research uses large language models (LLMs) to reason and plan in an executable and trustworthy manner via symbolic and structured representations. He has published more than 20 peer-reviewed papers in NLP and AI conferences, such as ACL, EMNLP, and NAACL, that have been cited more than 1,000 times. He also consistently serves as Area Chair, Session Chair, and reviewer in those venues. Being a musician, producer, and content creator having over 50,000 subscribers, he is also passionate in the research of AI music and creativity.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Huajie Shao: Physics Knowledge-Guided Foundation Models for Dynamical Systems&lt;/strong&gt;&lt;/em&gt;\&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bio:&lt;/strong&gt; Huajie Shao is a tenure-track assistant professor of Computer Science at William &amp;amp; Mary. Before that, he obtained his Ph.D. degree in Computer Science from the University of Illinois at Urbana Champaign (UIUC) in 2021. Dr. Shao&amp;rsquo;s research interests focus on Trustworthy Machine Learning, Physics-guided Machine Learning, and Large Language Models. Thus far, he has published more than 40 papers in top-tier conferences and journals, such as ICML, ICLR, KDD, CPVR, ACL, TPAMI, VLDB, WWW, and SIGIR. He also received several best paper awards, including KDD&#39;24, CAHSE&#39;24, SenSys’20 and ICCPS’17 Best Paper Award, FUSION’19 Student Paper Award, and UbiComp’19 Distinguished Paper Award.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://knowledgeable-lm.github.io/aaai25/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://knowledgeable-lm.github.io/aaai25/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://knowledgeable-lm.github.io/acl24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://knowledgeable-lm.github.io/acl24/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
