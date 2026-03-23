@@ -991,7 +991,7 @@ However, beyond the surface, there are still many lingering questions such as â€
         
           <div class="section-heading col-12 mb-3 text-center">
             <h1 class="mb-0">Important Dates</h1>
-            
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 0.8rem;">All deadlines are 23:59pm UTC-12h ("Anywhere on Earth").</p>
           </div>
         
       
@@ -1002,26 +1002,57 @@ However, beyond the surface, there are still many lingering questions such as â€
 
 
   <div class="col-12">
-    <div style="padding: 1rem;">
-<div class="col-12">
-    <p>All deadlines are 23:59pm UTC-12h (&ldquo;Anywhere on Earth&rdquo;).</p>
-<table class="table">
-    <tr>  <th>Submission Deadline</th>  <th>TBD</th>  </tr>
-    <tr>
-          <td data-table-dtype="text">Decision Notifications</td>
-          <td data-table-dtype="text">TBD</td>
-    </tr>
-    <tr>
-          <td data-table-dtype="text">Camera-Ready Deadline</td>
-          <td data-table-dtype="text">TBD</td>
-    </tr>
-    <tr>
-          <td data-table-dtype="text">Workshop Date</td>
-          <td data-table-dtype="text">TBD</td>
-    </tr>
-</table>
-</div>
-</div>
+    <div style="padding: 2rem 1rem;">
+      <style>
+        #dates .dates-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+        #dates .dates-grid .date-label,
+        #dates .dates-grid .date-value {
+          padding: 1rem 1.2rem;
+          border-bottom: 1px solid rgba(255,255,255,0.15);
+          font-size: 1.05rem;
+        }
+        #dates .dates-grid .date-label {
+          color: rgba(255,255,255,0.85);
+          font-weight: 600;
+        }
+        #dates .dates-grid .date-value {
+          color: #fff;
+          text-align: right;
+        }
+        #dates .dates-grid .date-highlight .date-value {
+          color: #90caf9;
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
+        #dates .dates-grid .date-row:last-child .date-label,
+        #dates .dates-grid .date-row:last-child .date-value {
+          border-bottom: none;
+        }
+        @media (max-width: 576px) {
+          #dates .dates-grid { grid-template-columns: 1fr; }
+          #dates .dates-grid .date-value { text-align: left; padding-top: 0; }
+        }
+      </style>
+      <div class="dates-grid">
+        <div class="date-label">Submission Deadline</div>
+        <div class="date-value" style="color: #90caf9; font-weight: 700;">April 1st, 2026</div>
+
+        <div class="date-label">Decision Notifications</div>
+        <div class="date-value">April 20th, 2026</div>
+
+        <div class="date-label">Camera-Ready Deadline</div>
+        <div class="date-value">May 1st, 2026</div>
+
+        <div class="date-label" style="border-bottom: none;">Workshop Date</div>
+        <div class="date-value" style="border-bottom: none; color: #90caf9; font-weight: 700;">July 3, 2026</div>
+      </div>
+    </div>
   </div>
 
 
