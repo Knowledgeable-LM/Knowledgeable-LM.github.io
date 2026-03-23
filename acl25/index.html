@@ -1,0 +1,2344 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Towards Knowledgeable Foundation Models" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://knowledgeable-lm.github.io/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#bbdefb" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.3008df2379f9291a2e82788480d8b32d.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Towards Knowledgeable Foundation Models" />
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu127f241f63a982cda73a1c1b15888e16_9623_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu127f241f63a982cda73a1c1b15888e16_9623_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://knowledgeable-lm.github.io/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@https://x.com/ManlingLi_" />
+    <meta property="twitter:creator" content="@https://x.com/ManlingLi_" />
+  
+  <meta property="og:site_name" content="Towards Knowledgeable Foundation Models" />
+  <meta property="og:url" content="https://knowledgeable-lm.github.io/" />
+  <meta property="og:title" content="Towards Knowledgeable Foundation Models" />
+  <meta property="og:description" content="Towards Knowledgeable Foundation Models" /><meta property="og:image" content="https://knowledgeable-lm.github.io/media/icon_hu127f241f63a982cda73a1c1b15888e16_9623_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://knowledgeable-lm.github.io/media/icon_hu127f241f63a982cda73a1c1b15888e16_9623_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://knowledgeable-lm.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://knowledgeable-lm.github.io/"
+}
+</script>
+
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://knowledgeable-lm.github.io/",
+  "name": "KnowFM",
+  "logo": "https://knowledgeable-lm.github.io/media/icon_hu127f241f63a982cda73a1c1b15888e16_9623_192x192_fill_lanczos_center_3.png",
+  
+  
+  
+  
+  "url": "https://knowledgeable-lm.github.io/"
+}
+</script>
+
+  
+
+  
+
+  
+<link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+  <title>Towards Knowledgeable Foundation Models</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  dark "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.6a6813e7ed475370e052267c3a688edc.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Towards Knowledgeable Foundation Models</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Towards Knowledgeable Foundation Models</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Workshops</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+
+                <a class="dropdown-item" href="/" data-target="."><span>ACL 2026</span></a>
+
+                <a class="dropdown-item" href="/acl25" data-target="./acl25"><span>ACL 2025</span></a>
+
+                <a class="dropdown-item" href="/aaai25" data-target="./aaai25"><span>AAAI 2025</span></a>
+
+                <a class="dropdown-item" href="/acl24" data-target="./acl24"><span>ACL 2024</span></a>
+
+            </div>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Tutorial</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="https://llmknowledgelifecycle.github.io/AAAI2025_Tutorial_LLMKnowledge/" data-target="https://llmknowledgelifecycle.github.io/AAAI2025_Tutorial_LLMKnowledge/"><span>The Lifecycle of Knowledge in LLMs</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+    
+  
+
+  
+
+  
+  
+  
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+  
+    
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="intro" class="home-section wg-hero  d-flex align-items-center fullscreen"  >
+   <div class="home-section-bg  bg-image parallax" style="background-color: white;background-image: url(&#39;https://knowledgeable-lm.github.io/media/backgrounds/LLMs_hubc0329f361d116f14e9f4bb0fa381766_40930_1920x1920_fit_q75_h2_lanczos_2.webp&#39;);filter: brightness(0.2);">
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+
+    
+      <h1 class="hero-title"><p style="color: white; font-size: 4rem; text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;">Towards Knowledgeable Foundation Models</p>
+<p style="color: white; font-size: 3rem; text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;">@ ACL 2025 Workshop</p>
+</h1>
+    
+
+    
+      <div class="hero-lead"><p>Aug 1, 2025 in Vienna, Austria</p>
+<!-- Powered by the [Hugo Conference Theme](https://wowchemy.com/hugo-themes/) -->
+</div>
+    
+
+    
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+    <p class="cta-btns">
+      <a href="/#call"  class="btn btn-primary btn-lg mb-md-1"><strong>Call for Papers</strong></a>
+
+      
+      
+        
+        
+        
+        
+          
+        
+      <a href="/#schedule"  class="hero-cta-alt btn-lg pl-md-4"><span style="color: white">Schedule</span> <i class="fas fa-angle-right"></i></a>
+      
+    </p>
+    
+
+    
+    
+
+  
+  
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+  
+    
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="about" class="home-section wg-blank dark fullscreen"  >
+   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://knowledgeable-lm.github.io/media/backgrounds/LLMs_hubc0329f361d116f14e9f4bb0fa381766_40930_1920x1920_fit_q75_h2_lanczos_2.webp&#39;);filter: brightness(0.2);">
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  justify-content-center">
+      
+        
+          <div class="section-heading col-12 mb-3 text-center">
+            <h1 class="mb-0">Towards Knowledgeable Foundation Models</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12">
+    <p>Knowledge has been an important pre-requisite for a variety of AI applications, and is typically sourced from either structured knowledge sources such as knowledge bases and dictionaries or unstructured knowledge sources such as Wikipedia documents.</p>
+<p>More recently, researchers have discovered that language models already possess a significant amount of knowledge through pre-training: LLMs can be used to generate commonsense knowledge and factual knowledge context for question answering. While the results are encouraging, there are still lingering questions:</p>
+<ul>
+<li>Where does this knowledge come from?</li>
+<li>How much do language models know?</li>
+<li>Is this knowledge reliable?</li>
+<li>If some knowledge is wrong, can we fix it?</li>
+</ul>
+<p>This workshop examines the lifecycle of knowledge within language models:</p>
+<ul>
+<li>(1) the emergence of knowledge through language model pre-training;</li>
+<li>(2) injection of external knowledge;</li>
+<li>(3) the updating and modification of knowledge;</li>
+<li>(4) probing and generation of knowledge.</li>
+</ul>
+<p>This is the 3rd workshop for Knowledgeable Foundation Model workshop. The previous workshop was hosted at <a href="https://knowledgeable-lm.github.io/aaai25/" target="_blank" rel="noopener">KnowFM@AAAI2025</a> and <a href="https://knowledgeable-lm.github.io/acl24/" target="_blank" rel="noopener">KnowLM@ACL2024</a>.</p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="call" class="home-section wg-tickets  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+<div class="row justify-content-center">
+  
+  <div class="section-heading col-12 mb-3 text-center">
+    <h1 class="mb-0">Call for Papers</h1>
+    
+  </div>
+  
+
+  
+  <div class="col-md-12">
+    <p>Knowledge has been an important prerequisite for various NLP applications and is typically derived from either structured knowledge sources such as knowledge bases and dictionaries or unstructured knowledge sources such as Wikipedia documents and news articles.</p>
+<p>It is known that language models already possess a significant amount of knowledge through pre-training: LLMs can be used to generate commonsense knowledge and factual knowledge when prompted to do so.
+However, beyond the surface, there are still many lingering questions such as “where the knowledge comes from”, “how do we quantify the amount of knowledge”, “is the knowledge reliable (and do LMs themselves know)”, “how can we augment LMs with domain-specific knowledge”, “how can we revise knowledge without hurting the reasoning abilities of LMs” and “how can we leverage knowledge to assist the self-correction of LMs”.</p>
+<p>In this workshop, we want to bring together researchers who focus on different stages and different aspects (structured knowledge, unstructured knowledge, and knowledge acquired from LMs themselves) of the knowledge lifecycle to discuss the role of knowledge in the era of large language models.</p>
+<p><em><strong>Submission Topics</strong></em></p>
+<p>We welcome submissions on all topics related to knowledgable LMs, including:</p>
+<ul>
+<li>Analysis of knowledge within LMs: how much they know and where that knowledge is from.</li>
+<li>Enhancing LMs with existing knowledge sources (knowledge graphs, domain-specific databases, manuals, and rules, etc, either during training or inference).</li>
+<li>Analyzing and improving RAG (retrieval-augmented generation) systems</li>
+<li>Updating and editing knowledge in LMs.</li>
+<li>Knowledge extraction and generation using LMs</li>
+<li>Evaluation of knowledge utilization (faithfulness, truthfulness) by LMs.</li>
+<li>Identification and mitigation of LM hallucinations, factual error correction</li>
+</ul>
+<p>We will also announce a Best Paper Award at our workshop.</p>
+<p><em><strong>Submission Instructions</strong></em></p>
+<p>We welcome two types of papers: regular workshop papers and non-archival submissions. Only regular workshop papers will be included in the workshop proceedings. Review process will be double-blind. All submissions should be in PDF format following the ACL template and made through OpenReview submission portal (<a href="https://openreview.net/group?id=aclweb.org/ACL/2025/Workshop/KnowFM" target="_blank" rel="noopener">https://openreview.net/group?id=aclweb.org/ACL/2025/Workshop/KnowFM</a>)</p>
+
+  </div>
+  
+
+</div>
+<div class="row justify-content-center pt-3">
+  <div class="col">
+    
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="dates" class="home-section wg-blank dark " style="padding: 20px 0 20px 0;" >
+   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://knowledgeable-lm.github.io/media/backgrounds/1689707021907_hua2d1c65aba91bcc21f702316314e8fc4_94670_1920x1920_fit_q75_h2_lanczos.webp&#39;);filter: brightness(0.2);">
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  justify-content-center">
+      
+        
+          <div class="section-heading col-12 mb-3 text-center">
+            <h1 class="mb-0">Important Dates</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12">
+    <div style="padding: 1rem;">
+<div class="col-12">
+    <p>All deadlines are 23:59pm UTC-12h (&ldquo;Anywhere on Earth&rdquo;).</p>
+<table class="table">
+    <tr>  <th>Submission Deadline</th>  <th>Jun 6th 2025 (23:59pm AoE)</th>  </tr>
+    <tr>
+          <td data-table-dtype="text">Decision Notifications</td>
+          <td data-table-dtype="text">Jun 18th 2025 (23:59pm AoE)</td>
+    </tr>
+    <tr>
+          <td data-table-dtype="text">Camera-Ready Deadline</td>
+          <td data-table-dtype="text">Jun 25th 2025 (23:59pm AoE)</td>
+    </tr>
+    <tr>
+          <td data-table-dtype="text">Workshop Date</td>
+          <td data-table-dtype="text">1st Aug 2025</td>
+    </tr>
+</table>
+</div>
+</div>
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="speakers" class="home-section wg-peopleme  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Speakers</h1>
+    
+  </div>
+  
+
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/preslav-nakov/avatar_hu11252ed74a6ec20ca6d2cf61671db25d_28753_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+
+    <div class="portrait-title">
+      <h2><a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/">Preslov Nakov</a></h2>
+      <h3>MBZUAI</h3>
+      
+      
+    </div>
+  </div>
+
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/yunyao-li/yunyao_avatar.jpg" alt="Avatar">
+
+    <div class="portrait-title">
+      <h2><a href="https://yunyaoli.github.io/">Yunyao Li</a></h2>
+      <h3>Adobe</h3>
+      
+      
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/chengxiang-zhai/chengxiang_avatar.jpg" alt="Avatar">
+
+    <div class="portrait-title">
+      <h2><a href="https://czhai.cs.illinois.edu/">Chengxiang Zhai</a></h2>
+      <h3>UIUC</h3>
+      
+      
+    </div>
+  </div>
+
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/eduard-hovy/avatar_hu4cd67ffd4a44f7a88d0e930044d3b178_952844_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://www.cs.cmu.edu/~hovy/">Eduard Hovy</a></h2>
+      
+      <h3>CMU</h3>
+      
+      
+    </div>
+  </div>
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="schedule" class="home-section wg-blank dark fullscreen" style="padding: 20px 0 20px 0;" >
+   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://knowledgeable-lm.github.io/media/backgrounds/1689707021907_hua2d1c65aba91bcc21f702316314e8fc4_94670_1920x1920_fit_q75_h2_lanczos.webp&#39;);filter: brightness(0.2);">
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  justify-content-center">
+      
+        
+          <div class="section-heading col-12 mb-3 text-center">
+            <h1 class="mb-0">Schedule</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12">
+    <div class="col-12">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Program</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>09:00-09:10</td>
+      <td>Opening Remarks</td>
+    </tr>
+    <tr>
+      <td>09:10-09:50</td>
+      <td>Keynote Speech <b>Preslov Nakov: Towards Truly Open, Language-Specific, Safe, Factual, and Specialized Large Language Models</b> <br>
+      <em class="abstract">First, we will argue for the need for fully transparent open-source large language models (LLMs), and we will describe the efforts of MBZUAI's Institute on Foundation Models (IFM) towards that based on the LLM360 initiative. Second, we will argue for the need for language-specific LLMs, and we will share our experience from building Jais, the world's leading open Arabic-centric foundation and instruction-tuned large language model, Nanda, our open-weights Hindi LLM, Sherkala, our open-weights Kazakh LLM, and some other models. Third, we will argue for the need for safe LLMs, and we will present Do-Not-Answer, a dataset for evaluating the guardrails of LLMs, which is at the core of the safety mechanisms of our LLMs. Forth, we will argue for the need for factual LLMs, we will discuss the factuality challenges that LLMs pose. We will then present some recent relevant tools for addressing these challenges developed at MBZUAI: (i) OpenFactCheck, a framework for fact-checking LLM output, for building customized fact-checking systems, and for benchmarking LLMs for factuality, (ii) LM-Polygraph, a tool for predicting an LLM's uncertainty in its output using cheap and fast uncertainty quantification techniques, and (iii) LLM-DetectAIve, a tool for machine-generated text detection. Finally, we will argue for the need for specialized models, and we will present the zoo of LLMs currently being developed at MBZUAI's IFM.</em>
+      </td>
+    </tr>
+    <tr>
+      <td>09:50-10:30</td>
+      <td>Keynote Speech <b>Yunyao Li: Declarative to Generative: Building and Querying Enterprise Knowledge Bases</b> <br>
+      <em class="abstract">Over the last 25 years -- search, knowledge graph and even large language model innovations have been adopted by consumers much before enterprises. The delay in adoption of such technologies in enterprises is largely due to two factors. First, enterprise knowledge bases vary widely based on industry verticals and even within an industry vertical by organization-specific terminology and vocabulary. Second, querying such knowledge bases needs to account for very low-tolerance enterprise users have for mistakes and hallucination. In this talk I will describe tools to build, maintain and query such knowledge bases and the evolution of these tools over two decades from declarative to generative systems.</em>
+      </td>
+    </tr>
+    <tr>
+      <td>10:30-11:00</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>11:00-11:15</td>
+      <td>Oral Presentation: SIS-Fact: Towards Systematic, Interpretable and Scalable Factuality Evaluation for LLM <br>
+      </td>
+    </tr>
+    <tr>
+      <td>11:15-11:30</td>
+      <td>Oral Presentation: Atomic Calibration of LLMs in Long-Form Generations <br>
+      </td>
+    </tr>
+    <tr>
+      <td>11:30-11:45</td>
+      <td>Oral Presentation: Teaching Large Language Models to Maintain Contextual Faithfulness via Synthetic Tasks and Reinforcement Learning <br>
+      </td>
+    </tr>
+    <tr>
+      <td>11:45-12:00</td>
+      <td>Oral Presentation: Understanding the Interplay between Parametric and Contextual Knowledge for Large Language Models <br>
+      </td>
+    </tr>
+    <tr>
+      <td>12:00-12:15</td>
+      <td>Oral Presentation: The Mirage of Model Editing: Revisiting Evaluation in the Wild (Best Paper Award) <br>
+      </td>
+    </tr>
+    <tr>
+      <td>12:15-12:25</td>
+      <td>Best Paper Award Announcement<br>
+      </td>
+    </tr>
+    <tr>
+      <td>12:25-14:10</td>
+      <td>Lunch Break </td>
+    </tr>
+    <tr>
+      <td>14:10-14:50</td>
+      <td>Keynote Speech <b>Chengxiang Zhai: From Knowledgeable Foundation Models to Knowledgeable Agents: A Neurosymbolic Perspective on Knowledge Representation</b> <br>
+      <em class="abstract">Foundation models acquire massive amounts of useful knowledge from both pre-training and fine-tuning, but the knowledge they encode in their parameter space is neither interpretable nor verifiable, and their behavior in applying the knowledge during inference time is unpredictable. These limitations cause concerns about their trustworthiness when they are directly used in real world applications. While much work has attempted to address those limitations via improving a foundation model itself, we argue that those limitations of foundation models are better addressed by building an agent that can augment the foundation model with a memory mechanism, regulate its behavior using a symbolic representation module, and self-improve itself over time. In this talk, we will discuss how compression of deep neural networks enables foundation models to acquire generalizable knowledge in both pre-training and fine-tuning, why the behaviors of foundation models are inherently unpredictable, and why it is necessary to build a knowledgeable agent on top of a knowledgeable foundation model and use a neurosymbolic knowledge representation to enable both trustworthiness and lifelong learning of the agent. We will conclude with some promising future directions for future research. </em>
+      </td>
+    </tr>
+    <tr>
+      <td>14:50-15:30</td>
+      <td>Panel Discussion: <b>Ed Hovy, Chengxiang Zhai,Yunyao Li</b><br>
+      </td>
+    </tr>
+    <tr>
+      <td>15:30-16:00</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>16:00-17:30</td>
+      <td>Poster Session <b></b><br>
+      </td>
+    </tr>
+    Virtual posters go to the gathering town.
+  </tbody>
+</table>
+</div>
+<style>
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  .table td:first-child {
+    white-space: nowrap;
+    min-width: 85px;
+  }
+  .abstract {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    .table {
+      font-size: 0.8rem;
+    }
+    .table td, .table th {
+      padding: 0.5rem;
+    }
+    .abstract {
+      font-size: 0.65rem;
+    }
+  }
+</style><blockquote>
+</blockquote>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="accepted" class="home-section wg-tickets  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+<div class="row justify-content-center">
+  
+  <div class="section-heading col-12 mb-3 text-center">
+    <h1 class="mb-0">Accepted Papers</h1>
+    
+  </div>
+  
+
+  
+  <div class="col-md-12">
+    <p><em><strong>Environment Free Coding Benchmarks: Evaluating Language Model Coding Capabilities without a Dedicated Environment </strong></em> <a href="https://openreview.net/attachment?id=Rny4QwVUYs&name=pdf">[PDF]</a>  <br> 
+      Laurence Liang  </p> 
+    <p><em><strong>How Many Parameters for Multi-Hop? An Information-Theoretic Capacity Law for Knowledge Retrieval in Large Language Models </strong></em> <a href="https://openreview.net/attachment?id=wgo12RhOW1&name=pdf">[PDF]</a> <br> 
+      Thomas Chen  </p> 
+    <p><em><strong>GeoEdit: Geometric Knowledge Editing for Large Language Models </strong></em> <a href="https://openreview.net/attachment?id=dTd08hRBE7&name=pdf">[PDF]</a> <br> 
+      Yujie Feng, Li-Ming Zhan, ZEXIN LU, Yongxin Xu, Xu Chu, Yasha Wang, Jiannong Cao, Philip S. Yu, Xiao-Ming Wu </p>
+    <p><em><strong>Superfluous Instruction: Vulnerabilities Stemming from Task-Specific Superficial Expressions in Instruction Templates</strong></em> <a href="https://openreview.net/attachment?id=XK0y2M3LhP&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1lob2zSKSP9AOStYqf9cjpp33OSXAkuJE/view?usp=drive_link">[Poster]</a> <br> 
+      Toma Suzuki, Yusuke Sakai, Justin Vasselli, Hidetaka Kamigaito, Taro Watanabe </p> 
+    <p><em><strong>DEAL: Disentangling Transformer Head Activations for LLM Steering</strong></em> <a href="https://openreview.net/attachment?id=HvXDK8Ryst&name=pdf">[PDF]</a> <br> 
+      Li-Ming Zhan, Bo LIU, ZEXIN LU, Yujie Feng, Chengqiang Xie, Jiannong Cao, Xiao-Ming Wu </p> 
+    <p><em><strong>Reasoning or Memorization? Investigating LLMs’ Capability in Restoring Chinese Internet Homophones</strong></em> <a href="https://openreview.net/attachment?id=bMX7CUq4jK&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/19_fl1zr65vTOuhqw4JJc0NMXFH17bkzf/view?usp=drive_link">[Poster]</a> <br> 
+      Jianfei Ma, Zhaoxin Feng, Huacheng Song, Emmanuele Chersoni, Zheng Chen </p> 
+    <p><em><strong>Knowledge Mechanisms in Large Language Models: A Survey and Perspective</strong></em> <a href="https://openreview.net/attachment?id=3a3wq4XFpo&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1oWcyPkCQ2qJe8R0f8yVQwXsxZyoaM8eY/view?usp=drive_link">[Poster]</a> <br> 
+      Mengru Wang, Yunzhi Yao, Shuofei Qiao, Shumin Deng, Jia-Chen Gu, Fei Huang, Huajun Chen, Ningyu Zhang </p> 
+    <p><em><strong>Structure-Aware Hyperbolic Representation for Coarse-to-Fine Emotion Classification in Lyrics</strong></em> <a href="https://openreview.net/attachment?id=2JPhHDQjJU&name=pdf">[PDF]</a> <br> 
+      Yutong Hu, Menglin Yang, Reza Mohammadi </p>
+    <p><em><strong>Theorem-of-Thought: A Multi-Agent Framework for Abductive, Deductive, and Inductive Reasoning in Language Models</strong></em> <a href="https://openreview.net/attachment?id=jztrZVWWXZ&name=pdf">[PDF]</a>  <a href="https://drive.google.com/file/d/1PC-Z6h73g8n4cfBxfdcbWACF5_22K_xJ/view?usp=drive_link">[Poster]</a><br> 
+      Samir Abdaljalil, HASAN KURBAN, Khalid Qaraqe, Erchin Serpedin </p>
+    <p><em><strong>IPAD: Inverse Prompt for AI Detection - A Robust and Interpretable LLM-Generated Text Detector</strong></em> <a href="https://openreview.net/attachment?id=jhfQcieVkG&name=pdf">[PDF]</a>  <a href="https://drive.google.com/file/d/1Ouqzlpu2zXwR3JqgNmJV5kPN_pMSy41f/view?usp=drive_link">[Poster]</a><br> 
+        Samir Abdaljalil, HASAN KURBAN, Khalid Qaraqe, Erchin Serpedin </p>
+    <p><em><strong>Context-Efficient Retrieval with Factual Decomposition</strong></em> <a href="https://openreview.net/attachment?id=RjiGpbsqjN&name=pdf">[PDF]</a> <br> 
+        Yanhong Li, David Yunis, David McAllester, Jiawei Zhou </p>
+    <p><em><strong>Meetalk: Retrieval-Augmented and Adaptively Personalized Meeting Summarization with Knowledge Learning from User Corrections</strong></em> <a href="https://openreview.net/attachment?id=yVXsMxmfEh&name=pdf">[PDF]</a> <br> 
+        Zheng CHEN, JIANG FUTIAN, Yue Deng, Changyang He, Bo Li </p>
+    <p><em><strong>Can LLMs Recognize Their Own Analogical Hallucinations? Evaluating Uncertainty Estimation for Analogical Reasoning</strong></em> <a href="https://openreview.net/attachment?id=UxbiZU6xh1&name=pdf">[PDF]</a> <br> 
+      Zheng CHEN, Zhaoxin Feng, Jianfei Ma, Jiexi Xu, Bo Li </p>
+    <p><em><strong>Democratizing LLM Benchmarking via Automated Dynamic Knowledge Evaluation</strong></em> <a href="https://openreview.net/attachment?id=Ok8z24J22Q&name=pdf">[PDF]</a> <br> 
+      Yanhong Li, Tianyang Xu, Kenan Tang, Karen Livescu, David McAllester, Jiawei Zhou </p>
+    <p><em><strong>A Progressive Learning Strategy for Medical Natural Language Understanding</strong></em> <a href="https://openreview.net/attachment?id=f4OM3Mn2wb&name=pdf">[PDF]</a> <br> 
+      ZHE YANG, Yi Huang, Mengfei Guo, Yaqin Chen, Xiaoting Wu, Junlan Feng, Chao Deng </p>
+    <p><em><strong>Exploring Personalization Shifts in Representation Space of LLMs</strong></em> <a href="https://openreview.net/attachment?id=Dg7NDoyKCM&name=pdf">[PDF]</a> <br>
+      Jiahong Liu, Wenhao Yu, Quanyu Dai, Zhongyang Li, Jieming Zhu, Menglin Yang, Tat-Seng Chua, Irwin King </p>
+    <p><em><strong>Semantics-Preserving Adversarial Attacks on Event-Driven Stock Prediction Models</strong></em> <a href="https://openreview.net/attachment?id=h6jJq3HYWF&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1y24ydLOG8YOMXEnuNktJ-tpwfnWbQ-Iq/view?usp=drive_link">[Poster]</a> <br>
+      Aofan Liu, haoxuan li, Hongjian Xing, Yuguo Yin, Zijun Li, Yiyan Qi </p>
+    <p><em><strong>Beyond Function-Level Search: Repository-Aware Dual-Encoder Code Retrieval with Adversarial Verification</strong></em> <a href="https://openreview.net/attachment?id=997c3TzUTe&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1LWMQ60gV69UgNmZyb-DrSdH414Cl5enl/view?usp=drive_link">[Poster]</a> <br>
+      Aofan Liu, Shiyuan SONG, haoxuan li, Cehao Yang, Yiyan Qi </p>
+    <p><em><strong>MD3R: Minimizing Data Distribution Discrepancies to Tackle Inconsistencies in Multilingual Query-Code Retrieval</strong></em> <a href="https://openreview.net/attachment?id=xdVLvWZcUe&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1eMwO3KVnwP-I_957UO3NU5dUS9hIq_60/view?usp=drive_link">[Poster]</a> <br>
+      Aofan Liu, Yuguo Yin, Hongjian Xing, Zhen Li, Yiyan Qi </p>
+    <p><em><strong>ATEB: Rethinking Advanced NLP Tasks in an Information Retrieval Setting</strong></em> <a href="https://openreview.net/attachment?id=9Hl8zz3YzC&name=pdf">[PDF]</a> <br>
+      Simeng Han, Frank Palma Gomez, Tu Vu, Zefei Li, Daniel Cer, Hansi Zeng, Chris Tar, Arman Cohan, Gustavo Hernandez Abrego </p>
+    <p><em><strong>When to Trust Context: Self-Reflective Debates for Context Reliability</strong></em> <a href="https://openreview.net/attachment?id=mvT2UcT8aE&name=pdf">[PDF]</a> <br>
+      Zeqi Zhou, Fang Wu, Shayan Talaei, Haokai Zhao, Cheng Meixin, Tinson Xu, Amin Saberi, Yejin Choi </p>
+    <p><em><strong>Truth Neurons</strong></em> <a href="https://openreview.net/attachment?id=kGu0VKM1oB&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1pWXyxbi9AfbMf052Q35KbR1qt22QnsiV/view?usp=sharing">[Poster]</a><br>
+      Haohang Li, Yupeng Cao, Yangyang Yu, Jordan W. Suchow, Zining Zhu </p>
+    <p><em><strong>FG-PRM: Fine-grained Hallucination Detection and Mitigation in Language Model Mathematical Reasoning</strong></em> <a href="https://openreview.net/attachment?id=cfY56tkxBc&name=pdf">[PDF]</a> <br>
+      Ziming Luo, Ruosen Li, Xinya Du </p>
+    <p><em><strong>ToolReAGt: Tool Retrieval for LLM-based Complex Task Solution via Retrieval Augmented Generation</strong></em> <a href="https://openreview.net/attachment?id=LTeBIM1rJL&name=pdf">[PDF]</a> <br>
+      Norbert Braunschweiler, Rama Doddipatla, TUDOR-CATALIN ZORILA </p>
+    <p><em><strong>COSMIC: Generalized Refusal Direction Identification in LLM Activations</strong></em> <a href="https://openreview.net/attachment?id=2NJ2oNEzsl&name=pdf">[PDF]</a> <br>
+      Vincent Siu, Nicholas Crispino, Zihao Yu, Sam Pan, Zhun Wang, Yang Liu, Dawn Song, Chenguang Wang </p>
+    <p><em><strong>Predicting Task Performance with Context-aware Scaling Laws</strong></em> <a href="https://openreview.net/attachment?id=131V12fEUR&name=pdf">[PDF]</a> <br>
+      Kyle Montgomery, David Park, Jianhong Tu, Michael Bendersky, Beliz Gunel, Dawn Song, Chenguang Wang </p>
+    <p><em><strong>MLAN: Language-Based Instruction Tuning Preserves and Transfers Knowledge in Multimodal Language Models</strong></em> <a href="https://openreview.net/attachment?id=cqOGtsBgmE&name=pdf">[PDF]</a> <br>
+      Jianhong Tu, Zhuohao Ni, Nicholas Crispino, Zihao Yu, Michael Bendersky, Beliz Gunel, Ruoxi Jia, Xin Liu, Lingjuan Lyu, Dawn Song, Chenguang Wang </p>
+    <p><em><strong>Stress-Testing Multimodal Foundation Models for Crystallographic Reasoning</strong></em> <a href="https://openreview.net/attachment?id=yEUxB1CaVe&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1MJ-vjb7HFIGH-Jk-ElfY35LbP9rO_7-G/view?usp=drive_link">[Poster]</a> <br>
+      Can Polat, HASAN KURBAN, Erchin Serpedin, Mustafa Kurban </p>
+    <p><em><strong>Understanding the Interplay between Parametric and Contextual Knowledge for Large Language Models</strong></em> <a href="https://openreview.net/attachment?id=4uisAcagzw&name=pdf">[PDF]</a> <br>
+      Sitao Cheng, Liangming Pan, Xunjian Yin, Xinyi Wang, William Yang Wang </p>
+    <p><em><strong>Evaluating RAG Robustness to Symbolic Perturbations</strong></em> <a href="https://openreview.net/attachment?id=iYf0BkZvAD&name=pdf">[PDF]</a> <br>
+      Xinyun Zhou, Xinfeng Li, Kun Wang, Xuanwang Zhang, Ming Xu, Yinan Peng, Miao Yu, Yidong Wang, Xiaojun Jia, Qingsong Wen, XiaoFeng Wang, Wei Dong </p>
+    <p><em><strong>Teaching Large Language Models to Maintain Contextual Faithfulness via Synthetic Tasks and Reinforcement Learning</strong></em> <a href="https://openreview.net/attachment?id=oWLRzZnZGA&name=pdf">[PDF]</a> <br>
+      Shuzheng Si, Haozhe Zhao, Cheng Gao, Yuzhuo Bai, Zhitong Wang, Bofei Gao, Kangyang Luo, Wenhao Li, Yufei Huang, Gang Chen, Fanchao Qi, Minjia Zhang, Baobao Chang, Maosong Sun </p>
+    <p><em><strong>Knowledge-Grounded Detection of Cryptocurrency Scams with Retrieval-Augmented LMs</strong></em> <a href="https://openreview.net/attachment?id=qDDuQGypqM&name=pdf">[PDF]</a> <br>
+      Zichao Li </p>
+    <p><em><strong>FIFA: Unified Faithfulness Evaluation Framework for Text-to-Video and Video-to-Text Generation</strong></em> <a href="https://openreview.net/attachment?id=B5lkLxfVrG&name=pdf">[PDF]</a> <br>
+      Liqiang Jing, Viet Dac Lai, Seunghyun Yoon, Trung Bui, Xinya Du </p>
+    <p><em><strong>A Comprehensive Analysis for Visual Object Hallucination in Large Vision-Language Models</strong></em> <a href="https://openreview.net/attachment?id=Ya4mqbhDP4&name=pdf">[PDF]</a> <br>
+      Liqiang Jing, Hardy Chen, Ehsan Aghazadeh, Xin Eric Wang, Xinya Du </p>
+    <p><em><strong>Latent Knowledge Scalpel: Precise and Massive Knowledge Editing for Large Language Models</strong></em> <a href="https://openreview.net/attachment?id=ku6abNA5U5&name=pdf">[PDF]</a> <br>
+      Xin Liu, Qiyang Song, Shaowen Xu, Kerou Zhou, Wenbo Jiang, Xiaoqi Jia, Weijuan Zhang, Heqing Huang, Yakai Li </p>
+    <p><em><strong>What makes Reasoning Models Different? Follow the Reasoning Leader for Efficient Decoding</strong></em> <a href="https://openreview.net/attachment?id=lDcbIC0Vbh&name=pdf">[PDF]</a> <br>
+      Ming Li, Zhengyuan Yang, Xiyao Wang, Dianqi Li, Linjie Li, Kevin Lin, Tianyi Zhou, Lijuan Wang </p>
+    <p><em><strong>CaKE: Circuit-aware Editing Enables Generalizable Knowledge Learners</strong></em> <a href="https://openreview.net/attachment?id=DLrD3VLf3w&name=pdf">[PDF]</a> <br>
+      Yunzhi Yao, Jizhan Fang, Jia-Chen Gu, Ningyu Zhang, Shumin Deng, Huajun Chen, Nanyun Peng </p>
+    <p><em><strong>SIS-Fact: Towards Systematic, Interpretable and Scalable Factuality Evaluation for LLM</strong></em> <a href="https://openreview.net/attachment?id=tQItgFCyUq&name=pdf">[PDF]</a> <br>
+      Yuzhuo Bai, Kangyang Luo, Wenhao Li, Shuzheng Si, Gang Chen, Fanchao Qi, Maosong Sun </p>
+    <p><em><strong>Shallow Focus, Deep Fixes: Enhancing Shallow Layers Vision Attention Sinks to Alleviate Hallucination in LVLMs</strong></em> <a href="https://openreview.net/attachment?id=B0buEm1XNH&name=pdf">[PDF]</a> <br>
+      Xiaofeng Zhang, Yihao Quan, Chen Shen, Chaochen Gu, Xiaosong Yuan, Shaotian Yan, Jiawei Cao, Hao Cheng, Kaijie Wu, Jieping Ye </p>
+    <p><em><strong>How Do LLMs Acquire New Knowledge? A Knowledge Circuits Perspective on Continual Pre-Training</strong></em> <a href="https://openreview.net/attachment?id=lcAi4rqJad&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1kdtDotrv1JjCroY0ykA_jroKXB5ileqt/view?usp=drive_link">[Poster]</a> <br>
+      Yixin Ou, Yunzhi Yao, Ningyu Zhang, Hui Jin, Jiacheng Sun, Shumin Deng, Zhenguo Li, Huajun Chen </p>
+    <p><em><strong>Teaching Large Language Models to Express Knowledge Boundary from Their Own Signals</strong></em> <a href="https://openreview.net/attachment?id=D5Xb2ltbre&name=pdf">[PDF]</a> <br>
+      Lida Chen, Zujie Liang, Xintao Wang, Jiaqing Liang, Yanghua Xiao, Feng Wei, Jinglei Chen, ZHENGHONG HAO, Bing Han, Wei Wang </p>
+    <p><em><strong>AttentionRAG: Attention-Guided Context Pruning in Retrieval-Augmented Generation</strong></em> <a href="https://openreview.net/attachment?id=vXAoZmsdtG&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1_F0OwOQMPQBZyKeyAra64UtStAhaThfl/view?usp=drive_link">[Poster]</a> <br>
+      Yixiong Fang, Tianran Sun, Yuling Shi, Xiaodong Gu </p>
+    <p><em><strong>Atomic Calibration of LLMs in Long-Form Generations</strong></em> <a href="https://openreview.net/attachment?id=rzsjUC45xf&name=pdf">[PDF]</a> <br>
+      Caiqi Zhang, Ruihan Yang, Zhisong Zhang, Xinting Huang, Sen Yang, Dong Yu, Nigel Collier </p>
+    <p><em><strong>Transparent and Coherent Procedural Mistake Detection</strong></em> <a href="https://openreview.net/attachment?id=KkfYxL2L4f&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1TEIb0jvh-0aQr8sXcPxPmDNGX2XjdzDO/view?usp=drive_link">[Poster]</a> <br>
+      Shane Storks, Itamar Bar-Yossef, Yayuan Li, Zheyuan Zhang, Jason J Corso, Joyce Chai </p>
+    <p><em><strong>CoRE: Condition-based Reasoning for Identifying Outcome Variance in Complex Events</strong></em> <a href="https://openreview.net/attachment?id=ppan8qKmi7&name=pdf">[PDF]</a> <a href="https://drive.google.com/file/d/12Y25OFNE_Sgud1bkAC3TythqEeleHqPp/view?usp=drive_link">[Poster]</a> <br>
+      Sai P Vallurupalli, Francis Ferraro </p>
+    <p><em><strong>EdTec-ItemGen: Enhancing Retrieval-Augmented Item Generation Through Key Point Extraction</strong></em> <a href="https://openreview.net/attachment?id=3HxepOiwHF&name=pdf">[PDF]</a> <br>
+      Alonso Palomino, David Buschhüter, Roland Roller, Niels Pinkwart, Benjamin Paassen </p>
+    <p><em><strong>ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision</strong></em> <a href="https://openreview.net/attachment?id=k9GacP9QCn&name=pdf">[PDF]</a>  <a href="https://drive.google.com/file/d/1Rn9FA0Ckb2NXOU-xVRtko03Jigr365OI/view?usp=drive_link">[Poster]</a><br>
+      Dosung Lee, Wonjun Oh, Boyoung Kim, Minyoung Kim, Joonsuk Park, Paul Hongsuck Seo </p>
+    <p><em><strong>Temporal Information Retrieval via Time-Specifier Model Merging</strong></em> <a href="https://openreview.net/attachment?id=MLmFUIVug7&name=pdf">[PDF]</a> <br>
+      SeungYoon Han, Taeho Hwang, Sukmin Cho, Soyeong Jeong, Hoyun Song, Huije Lee, Jong C. Park </p>
+    <p><em><strong>The Mirage of Model Editing: Revisiting Evaluation in the Wild</strong> (Best Paper Award)</em> <a href="https://openreview.net/attachment?id=i0rWKd5zcj&name=pdf">[PDF]</a>   <br>
+      Wanli Yang, Fei Sun, Jiajun Tan, Xinyu Ma, Qi Cao, Dawei Yin, Huawei Shen, Xueqi Cheng </p>
+    <p><em><strong>MT2ST: Adaptive Multi-Task to Single-Task Learning</strong></em> <a href="https://openreview.net/attachment?id=fwa59OwtmT&name=pdf">[PDF]</a> <br>
+      Dong Liu, Yanxuan Yu </p>
+    </div>
+  
+
+</div>
+<div class="row justify-content-center pt-3">
+  <div class="col">
+    
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="organization" class="home-section wg-peopleme  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Organization</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Organizing Committee</h2>
+  </div>
+  
+  
+      
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/yuji-zhang/yuji_avatar.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://celestinezyj.github.io/">Yuji Zhang</a></h2>
+      
+      <h3>University of Illinois Urbana-Champaign</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+
+
+    <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/canyu-chen/canyu_avatar.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://canyuchen.com">Canyu Chen</a></h2>
+      
+      <h3>Northwestern University</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/zoeyli/avatar_hua4a19f9cf29de9da8fccd1273c353cbb_10004_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://raspberryice.github.io/">Zoey Sha Li</a></h2>
+      
+      <h3>Amazon</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/mor-geva/avatar_hu48c32b39a7689a2460175de4415e188b_946436_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://mega002.github.io/">Mor Geva</a></h2>
+      
+      <h3>Tel Aviv University, Google Research</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/xiaozhi-wang/avatar_hu22b43ef0aff47a1fd81867346843ffde_32903_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://bakser.github.io">Xiaozhi Wang</a></h2>
+      
+      <h3>University of Illinois Urbana-Champaign</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/chi-han/avatar_huf3b605d6ec6cb618bb208f8a1a78a413_10757_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://glaciohound.github.io">Chi Han</a></h2>
+      
+      <h3>University of Illinois Urbana-Champaign</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/shangbin-feng/avatar_hu5e3a3e70e51823a9e1709d87b07b8f0a_3248894_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://bunsenfeng.github.io">Shangbin Feng</a></h2>
+      
+      <h3>University of Washington</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/silin-gao/avatar_hu42ea71d2790c05afc5b60790af106e19_25302_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://silin159.github.io/SilinGao/">Silin Gao</a></h2>
+      
+      <h3>EPFL</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/manling-li/avatar_hudf540693b64f9a6a2d70f06d58229227_7031871_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://limanling.github.io/">Manling Li</a></h2>
+      
+      <h3>Northwestern University</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Advising Committee</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/heng-ji/avatar_hu266c014db47152fe67716ea2cf1fbeae_1361939_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://blender.cs.illinois.edu/hengji.html">Heng Ji</a></h2>
+      
+      <h3>University of Illinois Urbana-Champaign, Amazon Scholar</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/isabelle-augenstein/avatar_hu58f3f90c9d7cdb84d1a34aa5edbe30af_507018_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://isabelleaugenstein.github.io/">Isabelle Augenstein</a></h2>
+      
+      <h3>University of Copenhagen</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/authors/mohit-bansal/avatar_hu2459c5929823f9a1c62c0316173314f7_3963483_270x270_fill_q75_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a></h2>
+      
+      <h3>University of North Carolina at Chapel Hill</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+  
+    
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-tickets dark "  >
+   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://knowledgeable-lm.github.io/media/backgrounds/1689707021907_hua2d1c65aba91bcc21f702316314e8fc4_94670_1920x1920_fit_q75_h2_lanczos.webp&#39;);filter: brightness(0.2);">
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+<div class="row justify-content-center">
+  
+
+  
+
+</div>
+<div class="row justify-content-center pt-3">
+  <div class="col">
+    
+    <div class="row pb-3">
+      <div class="col-12 col-md-4">
+        <div class="section-subheading">Contact</div>
+      </div>
+      <div class="col-12 col-md-6">
+        <p>Please email <a href="mailto:know-fm-acl25@googlegroups.com">know-fm-acl25@googlegroups.com</a> if you have any questions.</p>
+      </div>
+      <div class="col-12 col-md-2">
+        <a href="mailto:know-fm-acl25@googlegroups.com" target="_blank" rel="noreferrer noopener" class="btn btn-primary btn-lg w-100" style="color: black;">Email Us</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.992ab4bf929c75fb2aff9ec73febac85.js"></script>
+
+    
+    
+      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>
