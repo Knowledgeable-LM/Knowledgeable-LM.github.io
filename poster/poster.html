@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        background: #000 !important;
+      }
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnowFM @ ACL 2026 — Poster</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg-dark: rgba(0,0,0,.55); --fg: #f5f7fa; --muted: #c8d1dc; --accent: #42a5f5; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; font-family: Inter, Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color: var(--fg); }
+    body { display: grid; place-items: center; background: #0b1120; }
+
+    /* Fixed 16:9 canvas */
+    .poster { position: relative; width: 1560px; height: 820px; margin: 0 auto; overflow: hidden; border-radius: 18px; box-shadow: 0 10px 40px rgba(0,0,0,.6); }
+    .bg { position: absolute; inset: 0; background: url('../media/backgrounds/LLMs_hubc0329f361d116f14e9f4bb0fa381766_40930_1920x1920_fit_q75_h2_lanczos_2.webp') center/cover no-repeat; filter: brightness(.35) saturate(1.05); }
+    .overlay { position: absolute; inset: 0; background: radial-gradient(1200px 600px at 20% 10%, rgba(66,165,245,.18), transparent 45%), linear-gradient(180deg, rgba(7, 13, 28, .35), rgba(7, 13, 28, .7)); }
+    .content { position: relative; display: grid; grid-template-rows: auto 1fr; gap: 3px; height: 100%; padding: 20px 16px 35px; }
+
+    /* Header */
+    .header { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: start; }
+    .title { font-family: Poppins, Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-size: 34px; font-weight: 800; line-height: 1.15; letter-spacing: .2px; }
+    .subtitle { margin-top: 2px; font-size: 14px; color: var(--muted); }
+    .website { margin-top: 3px; font-weight: 600; color: #e9f2ff; font-size: 20px; }
+    .email { margin-top: 2px; font-weight: 600; color: #e9f2ff; font-size: 20px; }
+    .where { margin-top: 3px; font-weight: 700; color: #e7eef7; text-align: right; font-size: 18px; }
+
+    /* Grid */
+    .grid { display: grid; grid-template-columns: 870px 1fr; grid-template-rows: 220px 350px; gap: 10px; height: 100%; }
+    .card { background: var(--bg-dark); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 10px; overflow: hidden; }
+    .card h3 { margin: 0 0 6px; font-family: Poppins, Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-size: 18px; font-weight: 800; letter-spacing: .2px; display: flex; align-items: center; gap: 8px; }
+    .card h3 .dot { display: inline-block; width: .6em; height: .6em; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(66,165,245,.18); }
+    .list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px 14px; font-size: 14px; }
+
+    /* People grid with avatars */
+    .people-grid { display: grid; justify-content: start; align-items: start; }
+    .people-grid.speakers { grid-template-columns: repeat(7, 120px); gap: 1px 2px; }
+    .people-grid.advisors { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px 8px; }
+    .people-grid.organizers { grid-template-columns: repeat(5, 160px); gap: 8px 6px; }
+    .person { display: grid; justify-items: center; text-align: center; margin: 0; }
+    .person img { width: 100px; height: 100px; object-fit: cover; object-position: top center; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.18); }
+    .person figcaption { margin-top: 2px; font-size: 11px; line-height: 1.2; }
+    .person .aff { color: var(--muted); font-size: 10px; }
+    .organizers .person img { width: 80px; height: 80px; }
+
+    /* Placement */
+    .speakers-card { grid-column: 1; grid-row: 1; }
+    .organizers-card { grid-column: 1; grid-row: 2; }
+    .advisors-card { grid-column: 2; grid-row: 1; }
+    .topics-card { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; }
+
+    /* Key dates box */
+    .keydates { padding: 8px 10px; border: 1px dashed rgba(255,255,255,.2); border-radius: 10px; background: rgba(255,255,255,.04); margin-bottom: 8px; }
+    .keydates h4 { margin: 0 0 4px; font-size: 16px; }
+    .keydates ul { margin: 0; padding-left: 16px; font-size: 13px; line-height: 1.35; }
+
+    /* Topics */
+    .topics { display: grid; grid-template-columns: 1fr; gap: 8px; align-content: start; }
+    .topic { padding: 10px 12px; border: 1px dashed rgba(255,255,255,.14); border-radius: 10px; background: rgba(255,255,255,.04); }
+    .topic strong { display: block; margin-bottom: 6px; font-size: 15px; }
+    .topic ul { margin: 4px 0 0; padding-left: 18px; }
+    .topic li { margin: 4px 0; color: var(--muted); font-size: 13px; line-height: 1.3; }
+  </style>
+</head>
+
+<body>
+  <div class="poster" role="document">
+    <div class="bg" aria-hidden="true"></div>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <div class="content">
+      <div class="header">
+        <div>
+          <div class="title">ACL 2026 Workshop on<br><span>Towards Knowledgeable Foundation Models</span> (KnowFM)</div>
+          <div class="website">🌐 https://knowledgeable-lm.github.io/</div>
+          <div class="email">✉️ know-fm-acl26@googlegroups.com</div>
+          <div class="subtitle">The 4th Workshop on Knowledge in Foundation Models — knowledge analysis, augmentation, updating, extraction, evaluation, and hallucination mitigation</div>
+        </div>
+      </div>
+      <div class="where">ACL 2026 Workshop</div>
+
+      <div class="grid">
+        <div class="card speakers-card">
+          <h3><span class="dot"></span> Tentative Speakers</h3>
+          <div class="people-grid speakers">
+            <figure class="person"><img src="../authors/yoav-artzi/avatar.jpg" alt="Yoav Artzi"><figcaption><strong>Yoav Artzi</strong><div class="aff">Cornell University</div></figcaption></figure>
+            <figure class="person"><img src="../authors/sewon-min/avatar.jpg" alt="Sewon Min"><figcaption><strong>Sewon Min</strong><div class="aff">UC Berkeley</div></figcaption></figure>
+            <figure class="person"><img src="../authors/eunsol-choi/avatar_hu5c5439bceb3720c1286257ad859bc74a_152016_270x270_fill_q75_lanczos_center.jpg" alt="Eunsol Choi"><figcaption><strong>Eunsol Choi</strong><div class="aff">New York University</div></figcaption></figure>
+            <figure class="person"><img src="../authors/mohit-iyyer/avatar.jpg" alt="Mohit Iyyer"><figcaption><strong>Mohit Iyyer</strong><div class="aff">University of Maryland</div></figcaption></figure>
+            <figure class="person"><img src="../authors/danqi-chen/avatar.jpg" alt="Danqi Chen"><figcaption><strong>Danqi Chen</strong><div class="aff">Princeton University</div></figcaption></figure>
+            <figure class="person"><img src="../authors/yulia-tsvetkov/avatar.jpg" alt="Yulia Tsvetkov"><figcaption><strong>Yulia Tsvetkov</strong><div class="aff">U of Washington</div></figcaption></figure>
+            <figure class="person"><img src="../authors/luna-dong/avatar.jpg" alt="Luna Dong"><figcaption><strong>Luna Dong</strong><div class="aff">Meta</div></figcaption></figure>
+          </div>
+        </div>
+
+        <div class="card advisors-card">
+          <h3><span class="dot"></span> Advising Committee</h3>
+          <div class="people-grid advisors">
+            <figure class="person"><img src="../authors/heng-ji/avatar_hu266c014db47152fe67716ea2cf1fbeae_1361939_270x270_fill_q75_lanczos_center.jpg" alt="Heng Ji"><figcaption><strong>Heng Ji</strong><div class="aff">UIUC</div></figcaption></figure>
+            <figure class="person"><img src="../authors/mohit-bansal/avatar_hu2459c5929823f9a1c62c0316173314f7_3963483_270x270_fill_q75_lanczos_center.jpg" alt="Mohit Bansal"><figcaption><strong>Mohit Bansal</strong><div class="aff">UNC Chapel Hill</div></figcaption></figure>
+            <figure class="person"><img src="../authors/isabelle-augenstein/avatar_hu58f3f90c9d7cdb84d1a34aa5edbe30af_507018_270x270_fill_q75_lanczos_center.jpg" alt="Isabelle Augenstein"><figcaption><strong>Isabelle Augenstein</strong><div class="aff">U of Copenhagen</div></figcaption></figure>
+            <figure class="person"><img src="../authors/jiawei-han/avatar_hu3ec2cc0399113b4a0e9a9d2cf9955d1a_20133_270x270_fill_q75_lanczos_center.jpg" alt="Jiawei Han"><figcaption><strong>Jiawei Han</strong><div class="aff">UIUC</div></figcaption></figure>
+          </div>
+        </div>
+
+        <div class="card organizers-card">
+          <h3><span class="dot"></span> Organizing Committee</h3>
+          <div class="people-grid organizers">
+            <figure class="person"><img src="../authors/canyu-chen/canyu_avatar.jpg" alt="Canyu Chen"><figcaption><strong>Canyu Chen</strong><div class="aff">Northwestern</div></figcaption></figure>
+            <figure class="person"><img src="../authors/yuji-zhang/yuji_avatar.jpg" alt="Yuji Zhang"><figcaption><strong>Yuji Zhang</strong><div class="aff">UIUC</div></figcaption></figure>
+            <figure class="person"><img src="../authors/zoeyli/avatar_hua4a19f9cf29de9da8fccd1273c353cbb_10004_270x270_fill_q75_lanczos_center.jpg" alt="Zoey Sha Li"><figcaption><strong>Zoey Sha Li</strong><div class="aff">Amazon</div></figcaption></figure>
+            <figure class="person"><img src="../authors/zihan-wang/avatar.jpg" alt="Zihan Wang"><figcaption><strong>Zihan Wang</strong><div class="aff">Northwestern</div></figcaption></figure>
+            <figure class="person"><img src="../authors/qineng-wang/avatar.jpg" alt="Qineng Wang"><figcaption><strong>Qineng Wang</strong><div class="aff">Northwestern</div></figcaption></figure>
+            <figure class="person"><img src="../authors/jinyan-su/O8S8_NvF_400x400.jpg" alt="Jinyan Su"><figcaption><strong>Jinyan Su</strong><div class="aff">Cornell University</div></figcaption></figure>
+            <figure class="person"><img src="../authors/priyanka-kargupta/avatar.jpg" alt="Priyanka Kargupta"><figcaption><strong>Priyanka Kargupta</strong><div class="aff">UIUC</div></figcaption></figure>
+            <figure class="person"><img src="../authors/sara-vera-marjanovic/avatar.jpg" alt="Sara Vera Marjanovic"><figcaption><strong>Sara V. Marjanovic</strong><div class="aff">U of Copenhagen</div></figcaption></figure>
+            <figure class="person"><img src="../authors/jeff-z-pan/avatar.jpg" alt="Jeff Z. Pan"><figcaption><strong>Jeff Z. Pan</strong><div class="aff">U of Edinburgh</div></figcaption></figure>
+            <figure class="person"><img src="../authors/manling-li/avatar_hudf540693b64f9a6a2d70f06d58229227_7031871_270x270_fill_q75_lanczos_center.jpg" alt="Manling Li"><figcaption><strong>Manling Li</strong><div class="aff">Northwestern</div></figcaption></figure>
+          </div>
+        </div>
+
+        <div class="card topics-card">
+          <h3><span class="dot"></span> Submission Guidelines</h3>
+          <div class="keydates">
+            <div style="font-size: 13px; margin-bottom: 6px;">🗓️ Submission: Apr 1 | ✅ Notification: Apr 20 | 📝 Camera-ready: May 1</div>
+            <div style="font-size: 13px;">We will select one Best Paper and one Outstanding Paper. ACL template (8 pages).</div>
+          </div>
+          <div class="topics">
+            <div class="topic">
+              <strong>Submission Topics (Not Limited to)</strong>
+              <ul>
+                <li>Analysis of knowledge within LMs: how much they know and where that knowledge is from</li>
+                <li>Enhancing LMs with existing knowledge sources (KGs, databases, manuals, rules) during training or inference</li>
+                <li>Analyzing and improving RAG (retrieval-augmented generation) systems</li>
+                <li>Updating and editing knowledge in LMs</li>
+                <li>Knowledge extraction and generation using LMs</li>
+                <li>Evaluation of knowledge utilization (faithfulness, truthfulness) by LMs</li>
+                <li>Identification and mitigation of LM hallucinations, factual error correction</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
