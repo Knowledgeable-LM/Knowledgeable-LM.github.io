@@ -35,12 +35,12 @@
     .subtitle { margin-top: 2px; font-size: 14px; color: var(--muted); }
     .website { margin-top: 3px; font-weight: 600; color: #e9f2ff; font-size: 20px; }
     .email { margin-top: 2px; font-weight: 600; color: #e9f2ff; font-size: 20px; }
-    .where { margin-top: 3px; font-weight: 700; color: #e7eef7; text-align: right; font-size: 18px; }
+    .where { margin-top: 8px; font-weight: 700; color: #e7eef7; text-align: right; font-size: 18px; padding-right: 40px; }
 
     /* Grid */
     .grid { display: grid; grid-template-columns: 870px 1fr; grid-template-rows: 220px 350px; gap: 10px; height: 100%; }
     .card { background: var(--bg-dark); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 10px; overflow: hidden; }
-    .card h3 { margin: 0 0 6px; font-family: Poppins, Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-size: 18px; font-weight: 800; letter-spacing: .2px; display: flex; align-items: center; gap: 8px; }
+    .card h3 { margin: 0 0 22px; font-family: Poppins, Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-size: 18px; font-weight: 800; letter-spacing: .2px; display: flex; align-items: center; gap: 8px; }
     .card h3 .dot { display: inline-block; width: .6em; height: .6em; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(66,165,245,.18); }
     .list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px 14px; font-size: 14px; }
 
@@ -48,12 +48,12 @@
     .people-grid { display: grid; justify-content: start; align-items: start; }
     .people-grid.speakers { grid-template-columns: repeat(7, 120px); gap: 1px 2px; }
     .people-grid.advisors { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px 8px; }
-    .people-grid.organizers { grid-template-columns: repeat(5, 160px); gap: 8px 6px; }
+    .people-grid.organizers { grid-template-columns: repeat(5, 150px); gap: 12px 2px; justify-content: center; margin-top: 8px; }
     .person { display: grid; justify-items: center; text-align: center; margin: 0; }
     .person img { width: 100px; height: 100px; object-fit: cover; object-position: top center; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.18); }
     .person figcaption { margin-top: 2px; font-size: 11px; line-height: 1.2; }
     .person .aff { color: var(--muted); font-size: 10px; }
-    .organizers .person img { width: 80px; height: 80px; }
+    .organizers .person img { width: 100px; height: 100px; }
 
     /* Placement */
     .speakers-card { grid-column: 1; grid-row: 1; }
@@ -85,11 +85,10 @@
         <div>
           <div class="title">ACL 2026 Workshop on<br><span>Towards Knowledgeable Foundation Models</span> (KnowFM)</div>
           <div class="website">🌐 https://knowledgeable-lm.github.io/</div>
-          <div class="email">✉️ know-fm-acl26@googlegroups.com</div>
-          <div class="subtitle">The 4th Workshop on Knowledge in Foundation Models — knowledge analysis, augmentation, updating, extraction, evaluation, and hallucination mitigation</div>
+          <div class="subtitle">The 4th workshop for Knowledgeable Foundation Model workshop: knowledge analysis, augmentation, updating, extraction, evaluation, and hallucination mitigation</div>
         </div>
       </div>
-      <div class="where">ACL 2026 Workshop</div>
+      <div class="where">ACL 2026 Workshop · San Diego, California</div>
 
       <div class="grid">
         <div class="card speakers-card">
@@ -100,7 +99,7 @@
             <figure class="person"><img src="../authors/eunsol-choi/avatar_hu5c5439bceb3720c1286257ad859bc74a_152016_270x270_fill_q75_lanczos_center.jpg" alt="Eunsol Choi"><figcaption><strong>Eunsol Choi</strong><div class="aff">New York University</div></figcaption></figure>
             <figure class="person"><img src="../authors/mohit-iyyer/avatar.jpg" alt="Mohit Iyyer"><figcaption><strong>Mohit Iyyer</strong><div class="aff">University of Maryland</div></figcaption></figure>
             <figure class="person"><img src="../authors/danqi-chen/avatar.jpg" alt="Danqi Chen"><figcaption><strong>Danqi Chen</strong><div class="aff">Princeton University</div></figcaption></figure>
-            <figure class="person"><img src="../authors/yulia-tsvetkov/avatar.jpg" alt="Yulia Tsvetkov"><figcaption><strong>Yulia Tsvetkov</strong><div class="aff">U of Washington</div></figcaption></figure>
+            <figure class="person"><img src="../authors/yulia-tsvetkov/avatar.jpg" alt="Yulia Tsvetkov"><figcaption><strong>Yulia Tsvetkov</strong><div class="aff">University of Washington</div></figcaption></figure>
             <figure class="person"><img src="../authors/luna-dong/avatar.jpg" alt="Luna Dong"><figcaption><strong>Luna Dong</strong><div class="aff">Meta</div></figcaption></figure>
           </div>
         </div>
@@ -110,7 +109,7 @@
           <div class="people-grid advisors">
             <figure class="person"><img src="../authors/heng-ji/avatar_hu266c014db47152fe67716ea2cf1fbeae_1361939_270x270_fill_q75_lanczos_center.jpg" alt="Heng Ji"><figcaption><strong>Heng Ji</strong><div class="aff">UIUC</div></figcaption></figure>
             <figure class="person"><img src="../authors/mohit-bansal/avatar_hu2459c5929823f9a1c62c0316173314f7_3963483_270x270_fill_q75_lanczos_center.jpg" alt="Mohit Bansal"><figcaption><strong>Mohit Bansal</strong><div class="aff">UNC Chapel Hill</div></figcaption></figure>
-            <figure class="person"><img src="../authors/isabelle-augenstein/avatar_hu58f3f90c9d7cdb84d1a34aa5edbe30af_507018_270x270_fill_q75_lanczos_center.jpg" alt="Isabelle Augenstein"><figcaption><strong>Isabelle Augenstein</strong><div class="aff">U of Copenhagen</div></figcaption></figure>
+            <figure class="person"><img src="../authors/isabelle-augenstein/avatar_hu58f3f90c9d7cdb84d1a34aa5edbe30af_507018_270x270_fill_q75_lanczos_center.jpg" alt="Isabelle Augenstein"><figcaption><strong>Isabelle Augenstein</strong><div class="aff">University of Copenhagen</div></figcaption></figure>
             <figure class="person"><img src="../authors/jiawei-han/avatar_hu3ec2cc0399113b4a0e9a9d2cf9955d1a_20133_270x270_fill_q75_lanczos_center.jpg" alt="Jiawei Han"><figcaption><strong>Jiawei Han</strong><div class="aff">UIUC</div></figcaption></figure>
           </div>
         </div>
@@ -125,8 +124,8 @@
             <figure class="person"><img src="../authors/qineng-wang/avatar.jpg" alt="Qineng Wang"><figcaption><strong>Qineng Wang</strong><div class="aff">Northwestern</div></figcaption></figure>
             <figure class="person"><img src="../authors/jinyan-su/O8S8_NvF_400x400.jpg" alt="Jinyan Su"><figcaption><strong>Jinyan Su</strong><div class="aff">Cornell University</div></figcaption></figure>
             <figure class="person"><img src="../authors/priyanka-kargupta/avatar.jpg" alt="Priyanka Kargupta"><figcaption><strong>Priyanka Kargupta</strong><div class="aff">UIUC</div></figcaption></figure>
-            <figure class="person"><img src="../authors/sara-vera-marjanovic/avatar.jpg" alt="Sara Vera Marjanovic"><figcaption><strong>Sara V. Marjanovic</strong><div class="aff">U of Copenhagen</div></figcaption></figure>
-            <figure class="person"><img src="../authors/jeff-z-pan/avatar.jpg" alt="Jeff Z. Pan"><figcaption><strong>Jeff Z. Pan</strong><div class="aff">U of Edinburgh</div></figcaption></figure>
+            <figure class="person"><img src="../authors/sara-vera-marjanovic/avatar.jpg" alt="Sara Vera Marjanovic"><figcaption><strong>Sara V. Marjanovic</strong><div class="aff">University of Copenhagen</div></figcaption></figure>
+            <figure class="person"><img src="../authors/jeff-z-pan/avatar.jpg" alt="Jeff Z. Pan"><figcaption><strong>Jeff Z. Pan</strong><div class="aff">University of Edinburgh</div></figcaption></figure>
             <figure class="person"><img src="../authors/manling-li/avatar_hudf540693b64f9a6a2d70f06d58229227_7031871_270x270_fill_q75_lanczos_center.jpg" alt="Manling Li"><figcaption><strong>Manling Li</strong><div class="aff">Northwestern</div></figcaption></figure>
           </div>
         </div>
@@ -135,7 +134,7 @@
           <h3><span class="dot"></span> Submission Guidelines</h3>
           <div class="keydates">
             <div style="font-size: 13px; margin-bottom: 6px;">🗓️ Submission: Apr 1 | ✅ Notification: Apr 20 | 📝 Camera-ready: May 1</div>
-            <div style="font-size: 13px;">We will select one Best Paper and one Outstanding Paper. ACL template (8 pages).</div>
+            <div style="font-size: 13px;">We will select one 🏆 Best Paper and one 🏆 Outstanding Paper. ACL template (8 pages).</div>
           </div>
           <div class="topics">
             <div class="topic">
