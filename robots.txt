@@ -1,3 +1,7 @@
 User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /webfonts/
 
 Sitemap: https://knowledgeable-lm.github.io/sitemap.xml
