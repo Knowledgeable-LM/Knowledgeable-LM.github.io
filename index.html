@@ -759,7 +759,7 @@
   
   <section id="about" class="home-section wg-blank dark fullscreen"  >
    <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://knowledgeable-lm.github.io/media/backgrounds/LLMs_hubc0329f361d116f14e9f4bb0fa381766_40930_1920x1920_fit_q75_h2_lanczos_2.webp&#39;);filter: brightness(0.2);">
-     
+
    </div>
     <div class="container">
 
@@ -780,22 +780,43 @@
 
 
   <div class="col-12">
-    <p>Knowledge has been an important pre-requisite for a variety of AI applications, and is typically sourced from either structured knowledge sources such as knowledge bases and dictionaries or unstructured knowledge sources such as Wikipedia documents.</p>
-<p>More recently, researchers have discovered that language models already possess a significant amount of knowledge through pre-training: LLMs can be used to generate commonsense knowledge and factual knowledge context for question answering. While the results are encouraging, there are still lingering questions:</p>
-<ul>
-<li>Where does this knowledge come from?</li>
-<li>How much do language models know?</li>
-<li>Is this knowledge reliable?</li>
-<li>If some knowledge is wrong, can we fix it?</li>
-</ul>
-<p>This workshop examines the lifecycle of knowledge within language models:</p>
-<ul>
-<li>(1) the emergence of knowledge through language model pre-training;</li>
-<li>(2) injection of external knowledge;</li>
-<li>(3) the updating and modification of knowledge;</li>
-<li>(4) probing and generation of knowledge.</li>
-</ul>
-<p>This is the 4th workshop for Knowledgeable Foundation Model workshop. The previous workshops were hosted at <a href="https://knowledgeable-lm.github.io/acl25/" target="_blank" rel="noopener">KnowFM@ACL2025</a>, <a href="https://knowledgeable-lm.github.io/aaai25/" target="_blank" rel="noopener">KnowFM@AAAI2025</a>, and <a href="https://knowledgeable-lm.github.io/acl24/" target="_blank" rel="noopener">KnowLM@ACL2024</a>.</p>
+    <p style="font-size: 1.15rem; line-height: 1.8;">Foundation models have reshaped how AI systems acquire and utilize knowledge. Rather than relying solely on structured knowledge bases or curated documents, these models internalize vast amounts of world knowledge through large-scale pre-training, and can generate, retrieve, and reason over that knowledge at inference time.</p>
+<p style="font-size: 1.15rem; line-height: 1.8;">Yet fundamental questions remain: <em>Where does this knowledge come from? How much do foundation models know? Is their knowledge reliable and up-to-date? Can we control what they remember or forget?</em> As models grow in scale and are deployed in multimodal, agentic, and retrieval-augmented settings, understanding and managing the <strong>knowledge lifecycle</strong> becomes increasingly critical.</p>
+
+<p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">This workshop examines the lifecycle of knowledge within foundation models across four key stages:</p>
+
+<div class="row" style="margin-bottom: 2rem;">
+  <div class="col-md-6 col-lg-3 mb-3">
+    <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.8rem 1.2rem; height: 100%; text-align: center;">
+      <div><i class="fas fa-seedling" style="font-size: 1.8rem; color: #64b5f6; margin-bottom: 0.8rem;"></i></div>
+      <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">Emergence</h4>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.5;">How knowledge arises through pre-training and scaling</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 mb-3">
+    <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.8rem 1.2rem; height: 100%; text-align: center;">
+      <div><i class="fas fa-plug" style="font-size: 1.8rem; color: #64b5f6; margin-bottom: 0.8rem;"></i></div>
+      <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">Injection</h4>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.5;">Augmenting models with external and retrieved knowledge</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 mb-3">
+    <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.8rem 1.2rem; height: 100%; text-align: center;">
+      <div><i class="fas fa-sync-alt" style="font-size: 1.8rem; color: #64b5f6; margin-bottom: 0.8rem;"></i></div>
+      <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">Updating</h4>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.5;">Editing, correcting, and erasing knowledge in models</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 mb-3">
+    <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.8rem 1.2rem; height: 100%; text-align: center;">
+      <div><i class="fas fa-lightbulb" style="font-size: 1.8rem; color: #64b5f6; margin-bottom: 0.8rem;"></i></div>
+      <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">Probing &amp; Generation</h4>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.5;">Evaluating, extracting, and generating knowledge</p>
+    </div>
+  </div>
+</div>
+
+<p style="font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.75);">This is the 4th KnowFM workshop. Previous editions: <a href="https://knowledgeable-lm.github.io/acl25/" target="_blank" rel="noopener">KnowFM@ACL2025</a>, <a href="https://knowledgeable-lm.github.io/aaai25/" target="_blank" rel="noopener">KnowFM@AAAI2025</a>, and <a href="https://knowledgeable-lm.github.io/acl24/" target="_blank" rel="noopener">KnowLM@ACL2024</a>.</p>
 
   </div>
 
@@ -883,7 +904,7 @@
   
   <div class="col-md-12">
     <p>Foundation models have demonstrated remarkable capabilities in storing and utilizing knowledge acquired during pre-training. Yet as these models scale and are deployed in increasingly complex settings, critical challenges remain: How can we reliably assess what a model knows? How do we reconcile conflicting knowledge from parametric memory and retrieved context? How can we keep model knowledge up-to-date without compromising reasoning abilities? And how do we extend these capabilities beyond text to multimodal and agentic settings?</p>
-<p>This workshop brings together researchers working on different stages and aspects of the knowledge lifecycle &mdash; from structured and unstructured knowledge sources to knowledge acquired and synthesized by models themselves &mdash; to discuss how knowledge should be represented, acquired, verified, and applied in the era of foundation models.</p>
+<p>This workshop brings together researchers working on different stages and aspects of the knowledge lifecycle, from structured and unstructured knowledge sources to knowledge acquired and synthesized by models themselves, to discuss how knowledge should be represented, acquired, verified, and applied in the era of foundation models.</p>
 <p><em><strong>Submission Topics</strong></em></p>
 <p>We welcome submissions on all topics related to knowledgeable foundation models, including:</p>
 <ul>
