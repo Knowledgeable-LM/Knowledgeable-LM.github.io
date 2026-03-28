@@ -76,7 +76,7 @@
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" />
 
   
   
@@ -251,7 +251,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.3008df2379f9291a2e82788480d8b32d.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/css/wowchemy.3008df2379f9291a2e82788480d8b32d.css" />
 
   
 
@@ -392,10 +392,16 @@
 
 
   <title>KnowFM @ ACL 2026 — Towards Knowledgeable Foundation Models Workshop</title>
+
+  <!-- Prevent flash: hide page until fonts & styles are ready -->
+  <style>
+    body.cloak { opacity: 0; }
+    body.cloak-ready { opacity: 1; }
+  </style>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  dark "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  dark  cloak"  >
 
   
   
@@ -1977,6 +1983,29 @@ https://knowledgeable-lm.github.io/ -->
   referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   <!-- End of Statcounter Code -->
 
+<script>
+  // Reveal page once fonts and async styles are ready
+  (function() {
+    var b = document.body;
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(function() {
+        b.classList.remove('cloak');
+        b.classList.add('cloak-ready');
+      });
+    } else {
+      // Fallback for browsers without document.fonts
+      window.addEventListener('load', function() {
+        b.classList.remove('cloak');
+        b.classList.add('cloak-ready');
+      });
+    }
+    // Safety net: always reveal after 1.5s even if fonts fail to load
+    setTimeout(function() {
+      b.classList.remove('cloak');
+      b.classList.add('cloak-ready');
+    }, 1500);
+  })();
+</script>
 
 
 
